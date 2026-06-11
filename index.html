@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>BladeGuard Synchro | Hand Protection for Synchronized Skating</title>
+  <meta name="description" content="Development of ultra-thin, high-impact protective wearables for hand and finger safety in synchronized figure skating. Seeking research collaboration.">
+  <meta name="author" content="BladeGuard Synchro Research">
+  <!-- Preconnect for fonts and smooth rendering -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0a1e2f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* Custom utility classes */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Hero with subtle gradient and abstract ice pattern */
+    .hero {
+      background: linear-gradient(135deg, #eef2ff 0%, #ffffff 50%, #e6f0fa 100%);
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(0, 30, 60, 0.08);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23b0c4de" stroke-width="0.5" opacity="0.2"><path d="M4 4 L20 4 M4 8 L20 8 M4 12 L20 12 M4 16 L20 16 M4 20 L20 20" stroke-linecap="round"/><circle cx="12" cy="6" r="1.5"/><circle cx="18" cy="14" r="1.5"/><circle cx="6" cy="18" r="1.5"/></svg>');
+      background-repeat: repeat;
+      background-size: 32px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 4rem 0 3rem 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(2, 84, 128, 0.1);
+      backdrop-filter: blur(4px);
+      padding: 0.35rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #025480;
+      margin-bottom: 1.5rem;
+      border: 0.5px solid rgba(2,84,128,0.2);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #022b3f, #1f6392);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .hero-sub {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1e4663;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1.2rem;
+      margin: 1rem 0 1.5rem 0;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .btn-primary {
+      background: #0f3b5c;
+      color: white;
+      border: none;
+      padding: 0.85rem 2rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .btn-primary:hover {
+      background: #1b5a7e;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15,59,92,0.2);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #0f3b5c;
+      color: #0f3b5c;
+      padding: 0.85rem 2rem;
+      border-radius: 60px;
+      font-weight: 600;
+      transition: 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-outline:hover {
+      background: #0f3b5c;
+      color: white;
+      border-color: #0f3b5c;
+    }
+
+    /* Section styling */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid #e2edf2;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      letter-spacing: -0.3px;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #3b82f6;
+      border-radius: 3px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 1.8rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.2s;
+      border: 1px solid #eef2f8;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #cbdde9;
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
+    }
+    .card-icon {
+      font-size: 2.2rem;
+      color: #1f6392;
+      margin-bottom: 1.2rem;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+
+    .fail-list {
+      background: #fef6e0;
+      border-left: 5px solid #e67e22;
+      padding: 1.5rem 2rem;
+      border-radius: 20px;
+      margin: 1.5rem 0;
+    }
+    .fail-list p {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .fail-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .fail-list li {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .fail-list i.fa-times {
+      color: #c2410c;
+      width: 20px;
+    }
+
+    .outcome-highlight {
+      background: linear-gradient(120deg, #e1f0fa, #ffffff);
+      border-radius: 2rem;
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid #cde3ef;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .why-item {
+      background: #ffffffcc;
+      backdrop-filter: blur(2px);
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .why-item i {
+      font-size: 2.2rem;
+      color: #2c7da0;
+      margin-bottom: 1rem;
+    }
+    .collab-box {
+      background: #0a1e2f;
+      color: white;
+      border-radius: 2rem;
+      padding: 2.5rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .collab-box h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .collab-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .collab-list span {
+      background: rgba(255,255,255,0.15);
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+    }
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #4a627a;
+      background: #f1f5f9;
+    }
+    @media (max-width: 700px) {
+      h1 { font-size: 2.2rem; }
+      .hero-sub { font-size: 1.1rem; }
+      .container { padding: 0 1.2rem; }
+      section { padding: 2.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="container hero-content">
+    <div class="badge">
+      <i class="fas fa-microchip" style="margin-right: 6px;"></i> Advanced Materials Research
+    </div>
+    <h1>Protecting the hands that lift, hold & catch — at 15 mph on ice</h1>
+    <div class="hero-sub">
+      Development of Ultra-Thin, High-Impact Protective Wearables for Hand and Finger Safety in Synchronized Figure Skating
+    </div>
+    <p style="font-size: 1.05rem; max-width: 680px; color: #254e6b;">
+      No protective gear exists for hands and fingers in synchro skating — despite blade run-over injuries causing lacerations, crushed bones, and tendon damage. 
+      This research project aims to close the safety gap.
+    </p>
+    <div class="btn-group">
+      <a href="#research-objectives" class="btn-primary"><i class="fas fa-flask"></i> Explore the research</a>
+      <a href="#collaboration" class="btn-outline"><i class="fas fa-handshake"></i> Collaborate with us</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <!-- Problem Statement Section -->
+    <section id="problem">
+      <h2 class="section-title">The invisible risk on ice</h2>
+      <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Synchronized skating teams perform at <strong>12–15 mph</strong> in tight formations. When a skater falls, following skaters cannot stop in time — their blades run over the fallen skater’s exposed hands.</p>
+      <div class="fail-list">
+        <p><i class="fas fa-exclamation-triangle" style="color:#e67e22; margin-right: 8px;"></i> Consequences: lacerations, crushed bones, severed tendons, career-ending injuries</p>
+        <ul>
+          <li><i class="fas fa-times-circle"></i> <strong>Hockey gloves</strong> → too bulky, restrict hand-holding and grip</li>
+          <li><i class="fas fa-times-circle"></i> <strong>Standard gloves</strong> → zero impact or cut protection against blades</li>
+          <li><i class="fas fa-times-circle"></i> <strong>General padding</strong> → not designed for ice impact + blade cut risk + dexterity needs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research Objectives (3 pillars) -->
+    <section id="research-objectives">
+      <h2 class="section-title">Research objectives</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-cubes"></i></div>
+          <h3>1. Material discovery</h3>
+          <p>Identify ultra-thin materials with <strong>high impact absorption</strong> and <strong>cut resistance</strong> while maintaining flexibility for complex hand movements.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>2. Wearable design</h3>
+          <p>Design a lightweight, low-profile prototype (glove or finger sleeves) that fits inside standard skating gloves and permits full range of motion.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>3. Testing & validation</h3>
+          <p>Rigorous testing for impact reduction, cut resistance, dexterity, comfort, and durability — validated with active synchronized skaters.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expected Outcomes -->
+    <section>
+      <h2 class="section-title">Expected outcomes</h2>
+      <div class="outcome-highlight">
+        <i class="fas fa-hand-peace" style="font-size: 2.5rem; color: #1f6392; margin-bottom: 0.5rem; display: inline-block;"></i>
+        <h3 style="font-size: 1.8rem; margin: 0.5rem 0;">Functional Prototype</h3>
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">A wearable hand protection system designed specifically for synchronized skating — combining cut-proof layers and impact-dispersing materials at just 1–2mm thickness.</p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap;">
+          <span><i class="fas fa-shield-alt"></i> Impact reduction ≥40%</span>
+          <span><i class="fas fa-cut"></i> Blade cut resistance (ANSI/ISO level)</span>
+          <span><i class="fas fa-hand-peace"></i> Full finger articulation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why This Matters -->
+    <section>
+      <h2 class="section-title">Why this matters</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <i class="fas fa-user-nurse"></i>
+          <h3>For Skaters</h3>
+          <p>Prevents career-ending hand injuries, enables confident training, and allows athletes to push performance without fear.</p>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-globe-americas"></i>
+          <h3>For the Sport</h3>
+          <p>Addresses a critical safety gap as synchronized skating grows globally (Olympic momentum). Safer sport = longer careers.</p>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-atom"></i>
+          <h3>For Materials Science</h3>
+          <p>Advances ultra-thin protective materials with broader applications: industrial gloves, military, high-dexterity robotics, and medical devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Steps & Collaboration -->
+    <section id="collaboration">
+      <h2 class="section-title">Seeking research partners</h2>
+      <div class="collab-box">
+        <h3><i class="fas fa-flask"></i> Help us build the first synchro-specific hand protection</h3>
+        <p style="margin-top: 0.8rem; opacity: 0.9;">We are looking for a research institute / lab specializing in:</p>
+        <div class="collab-list">
+          <span>Materials science</span>
+          <span>Sports biomechanics</span>
+          <span>Protective equipment design</span>
+          <span>Textile engineering</span>
+        </div>
+        <p style="margin: 1.5rem 0 1rem 0; font-weight: 500;">Together we will:</p>
+        <ul style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem 1.5rem; margin-bottom: 1.8rem;">
+          <li>✓ Explore advanced material options</li>
+          <li>✓ Develop and test prototypes</li>
+          <li>✓ Validate with active synchro skaters</li>
+        </ul>
+        <a href="#" style="background: white; color: #0a1e2f; padding: 0.8rem 1.8rem; border-radius: 40px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;"><i class="fas fa-envelope"></i> Propose a collaboration</a>
+        <p style="font-size: 0.75rem; margin-top: 1.5rem;">contact@bladeguard-synchro.org (placeholder)</p>
+      </div>
+    </section>
+
+    <!-- research repository quick links -->
+    <section style="border-bottom: none; text-align: center;">
+      <div style="background: #eef3fa; border-radius: 2rem; padding: 2rem;">
+        <i class="fab fa-github" style="font-size: 2.5rem; color: #0a1e2f;"></i>
+        <h3 style="margin: 0.5rem 0;">Open research repository</h3>
+        <p>Explore material selection logs, preliminary test data, and design iterations on GitHub.</p>
+        <a href="#" class="btn-primary" style="background: #1f4662; margin-top: 1rem; display: inline-flex;"><i class="fab fa-github"></i> github.com/bladeguard-synchro</a>
+        <p style="margin-top: 1rem; font-size: 0.85rem;"><i class="fas fa-code-branch"></i> Repository: bladeguard-synchro — Ultra-thin, high-impact protective wearables for hand and finger safety</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p><strong>bladeguard-synchro</strong> · Open research initiative · All content and design CC BY-NC 4.0</p>
+    <p style="margin-top: 0.4rem;"><i class="fas fa-ice-skate"></i> Designed for the hold. Engineered for the fall.  ·  Collaboration welcome</p>
+  </div>
+</footer>
+
+<!-- small interaction to smooth anchor links -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === "#" || href === "") return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
+```
