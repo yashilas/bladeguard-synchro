@@ -6,7 +6,6 @@
   <title>BladeGuard Synchro | Hand Protection for Synchronized Skating</title>
   <meta name="description" content="Development of ultra-thin, high-impact protective wearables for hand and finger safety in synchronized figure skating. Seeking research collaboration.">
   <meta name="author" content="BladeGuard Synchro Research">
-  <!-- Preconnect for fonts and smooth rendering -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -24,14 +23,12 @@
       scroll-behavior: smooth;
     }
 
-    /* Custom utility classes */
     .container {
       max-width: 1280px;
       margin: 0 auto;
       padding: 0 2rem;
     }
 
-    /* Hero with subtle gradient and abstract ice pattern */
     .hero {
       background: linear-gradient(135deg, #eef2ff 0%, #ffffff 50%, #e6f0fa 100%);
       position: relative;
@@ -143,7 +140,25 @@
       border-color: #0f3b5c;
     }
 
-    /* Section styling */
+    .btn-github {
+      background: #1f1f2e;
+      color: white;
+      border: none;
+      padding: 0.85rem 2rem;
+      border-radius: 60px;
+      font-weight: 600;
+      transition: 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-github:hover {
+      background: #000000;
+      transform: translateY(-2px);
+    }
+
     section {
       padding: 4rem 0;
       border-bottom: 1px solid #e2edf2;
@@ -276,6 +291,22 @@
       border-radius: 40px;
       font-size: 0.9rem;
     }
+    .repo-card {
+      background: #0d2b3e;
+      border-radius: 1.5rem;
+      padding: 1.8rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .repo-card a {
+      color: #7ab7d4;
+      font-family: monospace;
+      font-size: 1.1rem;
+      word-break: break-all;
+    }
+    .repo-card a:hover {
+      color: white;
+    }
     footer {
       padding: 2rem 0;
       text-align: center;
@@ -296,7 +327,7 @@
 <div class="hero">
   <div class="container hero-content">
     <div class="badge">
-      <i class="fas fa-microchip" style="margin-right: 6px;"></i> Advanced Materials Research
+      <i class="fab fa-github" style="margin-right: 6px;"></i> Open Source Research · Active Development
     </div>
     <h1>Protecting the hands that lift, hold & catch — at 15 mph on ice</h1>
     <div class="hero-sub">
@@ -308,17 +339,27 @@
     </p>
     <div class="btn-group">
       <a href="#research-objectives" class="btn-primary"><i class="fas fa-flask"></i> Explore the research</a>
-      <a href="#collaboration" class="btn-outline"><i class="fas fa-handshake"></i> Collaborate with us</a>
+      <a href="https://github.com/yashilas/bladeguard-synchro" class="btn-github" target="_blank"><i class="fab fa-github"></i> View on GitHub →</a>
     </div>
   </div>
 </div>
 
 <main>
   <div class="container">
+    <!-- Repository Direct Link Section (prominent) 
+    <section style="padding-bottom: 0;">
+      <div class="repo-card">
+        <i class="fab fa-github" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></i>
+        <p style="font-weight: 600; margin-bottom: 0.25rem;">📁 Research Repository</p>
+        <a href="https://github.com/yashilas/bladeguard-synchro" target="_blank" style="font-size: 1.2rem; font-weight: 500;">github.com/bladeguard-synchro</a>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">Star, fork, and contribute to open-source safety research for synchronized skating.</p>
+      </div>
+    </section>-->
+
     <!-- Problem Statement Section -->
     <section id="problem">
       <h2 class="section-title">The invisible risk on ice</h2>
-      <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Synchronized skating teams perform at <strong>12–15 mph</strong> in tight formations. When a skater falls, following skaters cannot stop in time — their blades run over the fallen skater’s exposed hands.</p>
+      <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Synchronized skating teams perform at <strong>12–15 mph</strong> in tight formations. When a skater falls, following skaters cannot stop in time — their blades run over the fallen skater's exposed hands.</p>
       <div class="fail-list">
         <p><i class="fas fa-exclamation-triangle" style="color:#e67e22; margin-right: 8px;"></i> Consequences: lacerations, crushed bones, severed tendons, career-ending injuries</p>
         <ul>
@@ -329,7 +370,7 @@
       </div>
     </section>
 
-    <!-- Research Objectives (3 pillars) -->
+    <!-- Research Objectives -->
     <section id="research-objectives">
       <h2 class="section-title">Research objectives</h2>
       <div class="grid-3">
@@ -388,7 +429,7 @@
       </div>
     </section>
 
-    <!-- Next Steps & Collaboration -->
+    <!-- Collaboration 
     <section id="collaboration">
       <h2 class="section-title">Seeking research partners</h2>
       <div class="collab-box">
@@ -409,29 +450,29 @@
         <a href="#" style="background: white; color: #0a1e2f; padding: 0.8rem 1.8rem; border-radius: 40px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;"><i class="fas fa-envelope"></i> Propose a collaboration</a>
         <p style="font-size: 0.75rem; margin-top: 1.5rem;">contact@bladeguard-synchro.org (placeholder)</p>
       </div>
-    </section>
+    </section>-->
 
-    <!-- research repository quick links -->
+    <!-- Repository Footer Section 
     <section style="border-bottom: none; text-align: center;">
       <div style="background: #eef3fa; border-radius: 2rem; padding: 2rem;">
         <i class="fab fa-github" style="font-size: 2.5rem; color: #0a1e2f;"></i>
         <h3 style="margin: 0.5rem 0;">Open research repository</h3>
-        <p>Explore material selection logs, preliminary test data, and design iterations on GitHub.</p>
-        <a href="#" class="btn-primary" style="background: #1f4662; margin-top: 1rem; display: inline-flex;"><i class="fab fa-github"></i> github.com/bladeguard-synchro</a>
+        <p>Explore material selection logs, preliminary test data, design iterations, and contribute to the development.</p>
+        <a href="https://github.com/yashilas/bladeguard-synchro" class="btn-primary" target="_blank" style="background: #1f4662; margin-top: 1rem; display: inline-flex;"><i class="fab fa-github"></i> github.com/bladeguard-synchro</a>
         <p style="margin-top: 1rem; font-size: 0.85rem;"><i class="fas fa-code-branch"></i> Repository: bladeguard-synchro — Ultra-thin, high-impact protective wearables for hand and finger safety</p>
       </div>
-    </section>
+    </section>-->
   </div>
 </main>
 
 <footer>
+<!--
   <div class="container">
     <p><strong>bladeguard-synchro</strong> · Open research initiative · All content and design CC BY-NC 4.0</p>
-    <p style="margin-top: 0.4rem;"><i class="fas fa-ice-skate"></i> Designed for the hold. Engineered for the fall.  ·  Collaboration welcome</p>
-  </div>
+    <p style="margin-top: 0.4rem;"><i class="fab fa-github"></i> <a href="https://github.com/yashilas/bladeguard-synchro" style="color: #2c6280; text-decoration: none;" target="_blank">github.com/yashilas/bladeguard-synchro</a> · Designed for the hold. Engineered for the fall.</p>
+  </div> -->
 </footer>
 
-<!-- small interaction to smooth anchor links -->
 <script>
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -447,4 +488,3 @@
 </script>
 </body>
 </html>
-```
