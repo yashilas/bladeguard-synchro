@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>GlideRise — Glove Materials Assistant</title>
+  <meta name="description" content="Ask about grip, warmth, and durability for synchronized figure skating gloves.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0a1e2f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #eef2ff 0%, #ffffff 50%, #e6f0fa 100%);
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(0, 30, 60, 0.08);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23b0c4de" stroke-width="0.5" opacity="0.2"><path d="M4 4 L20 4 M4 8 L20 8 M4 12 L20 12 M4 16 L20 16 M4 20 L20 20" stroke-linecap="round"/><circle cx="12" cy="6" r="1.5"/><circle cx="18" cy="14" r="1.5"/><circle cx="6" cy="18" r="1.5"/></svg>');
+      background-repeat: repeat;
+      background-size: 32px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 4rem 0 3rem 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(2, 84, 128, 0.1);
+      backdrop-filter: blur(4px);
+      padding: 0.35rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #025480;
+      margin-bottom: 1.5rem;
+      border: 0.5px solid rgba(2,84,128,0.2);
+    }
+
+    .site-logo {
+      width: 64px;
+      height: auto;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 12px;
+      box-shadow: 0 6px 18px rgba(15,59,92,0.12);
+      vertical-align: middle;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+      max-width: 11ch;
+      color: #0a1e2f;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #1e4663;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1.2rem;
+      margin: 1rem 0 1.5rem 0;
+      max-width: 46ch;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .btn-primary,
+    .btn-outline,
+    .btn-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.85rem 1.8rem;
+      border-radius: 60px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #0f3b5c;
+      color: white;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .btn-primary:hover {
+      background: #1b5a7e;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15,59,92,0.2);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #0f3b5c;
+      color: #0f3b5c;
+    }
+
+    .btn-outline:hover {
+      background: #0f3b5c;
+      color: white;
+    }
+
+    .btn-github {
+      background: #1f1f2e;
+      color: white;
+      border: none;
+    }
+
+    .btn-github:hover {
+      background: #000000;
+    }
+
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid #e2edf2;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      letter-spacing: -0.3px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #3b82f6;
+      border-radius: 3px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 1.8rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.2s;
+      border: 1px solid #eef2f8;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #cbdde9;
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
+    }
+
+    .card-icon {
+      font-size: 2.2rem;
+      color: #1f6392;
+      margin-bottom: 1.2rem;
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+
+    .fail-list {
+      background: #fef6e0;
+      border-left: 5px solid #e67e22;
+      padding: 1.5rem 2rem;
+      border-radius: 20px;
+      margin: 1.5rem 0;
+    }
+
+    .fail-list p {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .fail-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .fail-list li {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .outcome-highlight {
+      background: linear-gradient(120deg, #e1f0fa, #ffffff);
+      border-radius: 2rem;
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid #cde3ef;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .why-item {
+      background: #ffffffcc;
+      backdrop-filter: blur(2px);
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    .why-item i {
+      font-size: 2.2rem;
+      color: #2c7da0;
+      margin-bottom: 1rem;
+    }
+
+    .collab-box {
+      background: #0a1e2f;
+      color: white;
+      border-radius: 2rem;
+      padding: 2.5rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .collab-box h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .collab-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+
+    .collab-list span {
+      background: rgba(255,255,255,0.15);
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+    }
+
+    .repo-card {
+      background: #0d2b3e;
+      border-radius: 1.5rem;
+      padding: 1.8rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .repo-card a {
+      color: #7ab7d4;
+      font-family: monospace;
+      font-size: 1.1rem;
+      word-break: break-all;
+    }
+
+    .repo-card a:hover {
+      color: white;
+    }
+
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #4a627a;
+      background: #f1f5f9;
+    }
+
+    .chat-section {
+      padding: 4rem 0;
+    }
+
+    .chat-card {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .chat-card .card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      padding: 1.5rem 1.8rem;
+      border-bottom: 1px solid #e2edf2;
+      background: #f8fbff;
+    }
+
+    .chat-header p {
+      margin: 0;
+      font-weight: 700;
+      color: #0a1e2f;
+    }
+
+    .chat-log {
+      height: 360px;
+      overflow-y: auto;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      background: #ffffff;
+    }
+
+    .chat-controls {
+      display: flex;
+      gap: 10px;
+      border-top: 1px solid #e2edf2;
+      padding: 14px;
+      background: #f8fafc;
+    }
+
+    .chat-controls input[type=text] {
+      flex: 1;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .chat-controls button {
+      background: #0f3b5c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 0 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .chat-controls button:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    .chat-details {
+      padding: 1rem 1.8rem 1.8rem;
+      background: #ffffff;
+      border-top: 1px solid #e2edf2;
+    }
+
+    .chat-details input {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 14px;
+      color: #0a1e2f;
+    }
+
+    .chat-widget {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      width: min(360px, calc(100vw - 32px));
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      z-index: 999;
+      box-shadow: 0 30px 70px rgba(15, 50, 85, 0.18);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+      transform: translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .chat-widget.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .chat-toggle {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #0f3b5c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 20px 40px rgba(15, 59, 92, 0.22);
+      z-index: 1000;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .chat-toggle:hover {
+      transform: translateY(-2px);
+      background: #194768;
+    }
+
+    .chat-popup {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 520px;
+      max-height: 80vh;
+    }
+
+    .chat-popup .chat-header {
+      padding: 1.4rem 1.6rem;
+      background: #0f3b5c;
+      color: white;
+      border-bottom: 1px solid rgba(15,59,92,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-popup .chat-header p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .chat-popup .close-chat {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      opacity: 0.82;
+    }
+
+    .chat-popup .close-chat:hover {
+      opacity: 1;
+    }
+
+    .chat-popup .chat-log {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.4rem;
+      background: #f7fbff;
+    }
+
+    .chat-popup .chat-controls {
+      position: sticky;
+      bottom: 0;
+      display: flex;
+      gap: 10px;
+      border-top: 1px solid #e2edf2;
+      padding: 14px;
+      background: white;
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2.2rem; }
+      .hero-sub { font-size: 1.1rem; }
+      .container { padding: 0 1.2rem; }
+      .chat-log { height: 300px; }
+      .chat-widget {
+        right: 16px;
+        bottom: 16px;
+      }
+      .chat-toggle {
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .chat-widget {
+        width: calc(100vw - 20px);
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2.2rem; }
+      .hero-sub { font-size: 1.1rem; }
+      .container { padding: 0 1.2rem; }
+      .chat-log { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="container hero-content">
+    <img src="GlideRise.png" alt="GlideRise logo" class="site-logo" onerror="this.style.display='none'" />
+    <div class="badge">
+      <i class="fab fa-github" style="margin-right: 6px;"></i> Open Source Research · Active Development
+    </div>
+    <h1>Protecting the hands that lift, hold & catch — at 15 mph on ice</h1>
+    <div class="hero-sub">
+      Development of ultra-thin, high-impact protective wearables for hand and finger safety in synchronized figure skating.
+    </div>
+    <p style="font-size: 1.05rem; max-width: 680px; color: #254e6b;">
+      No protective gear exists for hands and fingers in synchro skating — despite blade run-over injuries causing lacerations, crushed bones, and tendon damage.
+      This research project aims to close the safety gap.
+    </p>
+    <div class="btn-group">
+      <a href="#research-objectives" class="btn-primary"><i class="fas fa-flask"></i> Explore the research</a>
+      <a href="https://github.com/yashilas/bladeguard-synchro" class="btn-github" target="_blank"><i class="fab fa-github"></i> View on GitHub →</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <section id="problem">
+      <h2 class="section-title">The invisible risk on ice</h2>
+      <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Synchronized skating teams perform at <strong>12–15 mph</strong> in tight formations. When a skater falls, following skaters cannot stop in time — their blades run over the fallen skater's exposed hands.</p>
+      <div class="fail-list">
+        <p><i class="fas fa-exclamation-triangle" style="color:#e67e22; margin-right: 8px;"></i> Consequences: lacerations, crushed bones, severed tendons, career-ending injuries</p>
+        <ul>
+          <li><i class="fas fa-times-circle"></i> <strong>Hockey gloves</strong> → too bulky, restrict hand-holding and grip</li>
+          <li><i class="fas fa-times-circle"></i> <strong>Standard gloves</strong> → zero impact or cut protection against blades</li>
+          <li><i class="fas fa-times-circle"></i> <strong>General padding</strong> → not designed for ice impact + blade cut risk + dexterity needs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="research-objectives">
+      <h2 class="section-title">Research objectives</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-cubes"></i></div>
+          <h3>1. Material discovery</h3>
+          <p>Identify ultra-thin materials with <strong>high impact absorption</strong> and <strong>cut resistance</strong> while maintaining flexibility for complex hand movements.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>2. Wearable design</h3>
+          <p>Design a lightweight, low-profile prototype (glove or finger sleeves) that fits inside standard skating gloves and permits full range of motion.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>3. Testing & validation</h3>
+          <p>Rigorous testing for impact reduction, cut resistance, dexterity, comfort, and durability — validated with active synchronized skaters.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Expected outcomes</h2>
+      <div class="outcome-highlight">
+        <i class="fas fa-hand-peace" style="font-size: 2.5rem; color: #1f6392; margin-bottom: 0.5rem; display: inline-block;"></i>
+        <h3 style="font-size: 1.8rem; margin: 0.5rem 0;">Functional Prototype</h3>
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">A wearable hand protection system designed specifically for synchronized skating — combining cut-proof layers and impact-dispersing materials at just 1–2mm thickness.</p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap;">
+          <span><i class="fas fa-shield-alt"></i> Impact reduction ≥40%</span>
+          <span><i class="fas fa-cut"></i> Blade cut resistance (ANSI/ISO level)</span>
+          <span><i class="fas fa-hand-peace"></i> Full finger articulation</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Why this matters</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <i class="fas fa-user-nurse"></i>
+          <h3>For Skaters</h3>
+          <p>Prevents career-ending hand injuries, enables confident training, and allows athletes to push performance without fear.</p>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-globe-americas"></i>
+          <h3>For the Sport</h3>
+          <p>Addresses a critical safety gap as synchronized skating grows globally (Olympic momentum). Safer sport = longer careers.</p>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-atom"></i>
+          <h3>For Materials Science</h3>
+          <p>Advances ultra-thin protective materials with broader applications: industrial gloves, military, high-dexterity robotics, and medical devices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat-section" id="materials-chat">
+      <h2 class="section-title">Glove Materials Assistant</h2>
+      <p style="max-width: 720px; color: #24415f;">
+        The assistant is available as a popup in the bottom-right corner. Tap the chat button to ask about material choice, durability, grip, and warmth.
+      </p>
+    </section>
+  </div>
+</main>
+
+<button class="chat-toggle" id="chat-toggle" aria-label="Open chat">
+  <i class="fas fa-comments"></i>
+</button>
+
+<div class="chat-widget" id="chat-widget" aria-hidden="true">
+  <div class="chat-popup">
+    <div class="chat-header">
+      <p>Glove Materials Assistant</p>
+      <button class="close-chat" id="close-chat" aria-label="Close chat">×</button>
+    </div>
+    <div class="chat-log" id="log">
+      <div class="msg bot">Hi — ask me anything about glove materials for synchronized figure skating. For example: "What's the best material for grip in cold rinks?"</div>
+    </div>
+    <form id="chat-form" class="chat-controls">
+      <input type="text" id="input" placeholder="Ask about glove materials…" autocomplete="off" required />
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+    <div class="chat-details">
+      <details>
+        <summary>API settings</summary>
+        <input type="text" id="api-url" placeholder="https://your-api-host.example.com" />
+      </details>
+    </div>
+  </div>
+</div>
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="text-align:center; padding-top: 2rem; color:#4a627a;">
+    <p>GlideRise — Glove Materials Assistant. Built for synchronized skating material research.</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === "#" || href === "") return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  const DEFAULT_API_URL = "http://localhost:8000";
+  const apiUrlInput = document.getElementById('api-url');
+  apiUrlInput.value = localStorage.getItem('materialsApiUrl') || DEFAULT_API_URL;
+  apiUrlInput.addEventListener('change', () => {
+    localStorage.setItem('materialsApiUrl', apiUrlInput.value.trim());
+  });
+
+  const log = document.getElementById('log');
+  const form = document.getElementById('chat-form');
+  const input = document.getElementById('input');
+  const sendBtn = document.getElementById('send-btn');
+  const chatToggle = document.getElementById('chat-toggle');
+  const chatWidget = document.getElementById('chat-widget');
+  const closeChat = document.getElementById('close-chat');
+
+  function addMessage(text, cls){
+    const div = document.createElement('div');
+    div.className = `msg ${cls}`;
+    div.textContent = text;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+    return div;
+  }
+
+  function openChat(){
+    chatWidget.classList.add('open');
+    chatWidget.setAttribute('aria-hidden', 'false');
+    input.focus();
+  }
+
+  function closeChatWidget(){
+    chatWidget.classList.remove('open');
+    chatWidget.setAttribute('aria-hidden', 'true');
+  }
+
+  chatToggle.addEventListener('click', openChat);
+  closeChat.addEventListener('click', closeChatWidget);
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const message = input.value.trim();
+    if(!message) return;
+
+    addMessage(message, 'user');
+    input.value = '';
+    sendBtn.disabled = true;
+
+    const typingEl = addMessage('Thinking…', 'bot typing');
+
+    const apiUrl = (apiUrlInput.value.trim() || DEFAULT_API_URL).replace(/\/$/, '');
+
+    try{
+      const res = await fetch(`${apiUrl}/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message })
+      });
+
+      if(!res.ok){
+        const detail = await res.text();
+        throw new Error(`API error ${res.status}: ${detail}`);
+      }
+
+      const data = await res.json();
+      typingEl.remove();
+      addMessage(data.reply, 'bot');
+    }catch(err){
+      typingEl.remove();
+      addMessage(`Couldn't reach the assistant: ${err.message}`, 'error');
+    }finally{
+      sendBtn.disabled = false;
+      input.focus();
+    }
+  });
+</script>
+</body>
+</html>

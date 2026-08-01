@@ -1,0 +1,1479 @@
+Material: Polycarbonate/Thermoplastic Polyurethane Blend
+Family: thermoplastic polyurethane
+Properties:
+- Density: 0.0415ÿ-ÿ0.0426ÿlb/in? g per cc
+- Tensile Strength: 5300 - 8000 psi  Mpa
+- Elongation at Break: 370 - 470 % %
+- Modulus: 0.620ÿ-ÿ380ÿksi Gpa    
+- Serving size reference: 
+
+This is a polycarbonate/thermoplastic polyurethane blend material that provides 0.0415ÿ-ÿ0.0426ÿlb/in? density per 100 grams.
+
+---
+
+Material: Thermoplastic Polyurethane, Elastomer, Glass Filled
+Family: thermoplastic polyurethane
+Properties:
+- Density: 0.0462ÿ-ÿ0.0600ÿlb/in? g per cc
+- Tensile Strength: 4060ÿ-ÿ13900ÿpsi Mpa
+- Elongation at Break: 10.0 - 86.0 % %
+- Modulus: 90.0ÿ-ÿ797ÿksi Gpa    
+- Serving size reference: 
+
+This is a thermoplastic polyurethane, elastomer, glass filled material that provides 0.0462ÿ-ÿ0.0600ÿlb/in? density per 100 grams.
+
+---
+
+Material: nan
+Family: thermoplastic polyurethane
+Properties:
+- Density: nan g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a nan material that provides nan density per 100 grams.
+
+---
+
+Material: Alliance Polymers Zythane? 7085AF Thermoplastic Polyurethane Elastomer
+Family: thermoplastic polyurethane
+Properties:
+- Density: nan g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a alliance polymers zythane? 7085af thermoplastic polyurethane elastomer material that provides nan density per 100 grams.
+
+---
+
+Material: Covestro Desmopan? 2792A Thermoplastic Polyurethane
+Family: thermoplastic polyurethane
+Properties:
+- Density: nan g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a covestro desmopan? 2792a thermoplastic polyurethane material that provides nan density per 100 grams.
+
+---
+
+Material: BASF Elastollan? 1185 A W TPUR
+Family: polyurethane elastomers
+Properties:
+- Density: 1.16ÿg/cc g per cc
+- Tensile Strength: 40.0ÿMPa Mpa
+- Elongation at Break: 700% %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a basf elastollan? 1185 a w tpur material that provides 1.16ÿg/cc density per 100 grams.
+
+---
+
+Material: BASF Elastollan? 1154 D FHF TPUR Flame Retardant Halogen Free
+Family: nan
+Properties:
+- Density: 1.27ÿg/cc g per cc
+- Tensile Strength: 20.0ÿMPa Mpa
+- Elongation at Break: 400% %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a basf elastollan? 1154 d fhf tpur flame retardant halogen free material that provides 1.27ÿg/cc density per 100 grams.
+
+---
+
+Material: BASF Elastollan? S 50 A SPF TPUR
+Family: nan
+Properties:
+- Density: 1.20ÿg/cc g per cc
+- Tensile Strength: 35.0 MPa  Mpa
+- Elongation at Break: 900% %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a basf elastollan? s 50 a spf tpur material that provides 1.20ÿg/cc density per 100 grams.
+
+---
+
+Material: BASF Elastollan? R 1001 10% Glass Filled TPUR
+Family: nan
+Properties:
+- Density: 1.27ÿg/cc g per cc
+- Tensile Strength: 30.0ÿMPa Mpa
+- Elongation at Break: 65% %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a basf elastollan? r 1001 10% glass filled tpur material that provides 1.27ÿg/cc density per 100 grams.
+
+---
+
+Material: BASF Elastollan? R 2005/1 20% Glass Filled TPUR
+Family: nan
+Properties:
+- Density: 1.35ÿg/cc g per cc
+- Tensile Strength: 65.0 MPa  Mpa
+- Elongation at Break: 20% %
+- Modulus: 1.90ÿGPa Gpa    
+- Serving size reference: 
+
+This is a basf elastollan? r 2005/1 20% glass filled tpur material that provides 1.35ÿg/cc density per 100 grams.
+
+---
+
+Material: Cri-Tech Cri-plastMP F-TPX Fluoro - Thermoplastic Elastomers, After E-beam Crosslinking
+Family: thermoplastic elastomers,
+Properties:
+- Density: nan g per cc
+- Tensile Strength: 13.8ÿMPa Mpa
+- Elongation at Break: 200% %
+- Modulus: 10.3ÿMPa Gpa    
+- Serving size reference: 
+
+This is a cri-tech cri-plastmp f-tpx fluoro - thermoplastic elastomers, after e-beam crosslinking material that provides nan density per 100 grams.
+
+---
+
+Material: Cri-Tech Cri-plastMP F-TPX Fluoro - Thermoplastic Elastomers, As compounded
+Family: nan
+Properties:
+- Density: nan g per cc
+- Tensile Strength: 4.83ÿMPa Mpa
+- Elongation at Break: >= 500 % %
+- Modulus: 4.14ÿMPa Gpa    
+- Serving size reference: 
+
+This is a cri-tech cri-plastmp f-tpx fluoro - thermoplastic elastomers, as compounded material that provides nan density per 100 grams.
+
+---
+
+Material: A-Glass Fiber, Generic
+Family: nylon based films or fibers,
+Properties:
+- Density: 2.44 g/cc  g per cc
+- Tensile Strength: 3310 MPa  Mpa
+- Elongation at Break: 4.80% %
+- Modulus: 68.9ÿGPa Gpa    
+- Serving size reference: 
+
+This is a a-glass fiber, generic material that provides 2.44 g/cc  density per 100 grams.
+
+---
+
+Material: AGY ZenTron? S-2 Generic S-Glass Fiber
+Family: nan
+Properties:
+- Density: 2.46 g/cc  g per cc
+- Tensile Strength: 4445ÿMPa Mpa
+- Elongation at Break: 5.70% %
+- Modulus: 86.9ÿGPa Gpa    
+- Serving size reference: 
+
+This is a agy zentron? s-2 generic s-glass fiber material that provides 2.46 g/cc  density per 100 grams.
+
+---
+
+Material: Microtherm Group Super A Alumina Based Thermal Insulation
+Family: nan
+Properties:
+- Density: 0.450ÿ-ÿ0.500ÿg/cc g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: 0.00430 Gpa Gpa    
+- Serving size reference: 
+
+This is a microtherm group super a alumina based thermal insulation material that provides 0.450ÿ-ÿ0.500ÿg/cc density per 100 grams.
+
+---
+
+Material: Mid-Mountain Materials SILTEX? 18 Amorphous Silica Textile
+Family: nan
+Properties:
+- Density: 0.8286 g/cc g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a mid-mountain materials siltex? 18 amorphous silica textile material that provides 0.8286 g/cc density per 100 grams.
+
+---
+
+Material: 3M Nextel? 312 Industrial Ceramic Fiber
+Family: nan
+Properties:
+- Density: 2.70ÿg/cc g per cc
+- Tensile Strength: 1700ÿMPa Mpa
+- Elongation at Break: nan %
+- Modulus: 150ÿGPa Gpa    
+- Serving size reference: 
+
+This is a 3m nextel? 312 industrial ceramic fiber material that provides 2.70ÿg/cc density per 100 grams.
+
+---
+
+Material: Mitsubishi Chemical Advanced Materials TIVAR? Sterra? DrySlide UHMW-PE Recycled Ultra High Molecular Weight Polyethylene
+Family: ultra high molecular weight polyethylene,
+Properties:
+- Density: nan g per cc
+- Tensile Strength: 19.0ÿMPa Mpa
+- Elongation at Break: 16.00% %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a mitsubishi chemical advanced materials tivar? sterra? dryslide uhmw-pe recycled ultra high molecular weight polyethylene material that provides nan density per 100 grams.
+
+---
+
+Material: CENTROPLAST CENTROLEN PE-UHMW Ultra-high molecular weight polyethylene
+Family: nan
+Properties:
+- Density: 0.940ÿg/cc g per cc
+- Tensile Strength: 20.0ÿMPa Mpa
+- Elongation at Break: >= 50 % %
+- Modulus: 0.800ÿGPa Gpa    
+- Serving size reference: 
+
+This is a centroplast centrolen pe-uhmw ultra-high molecular weight polyethylene material that provides 0.940ÿg/cc density per 100 grams.
+
+---
+
+Material: Graft Polymer GRAFTALEN? MP-UHHD 00850 Melt Processable Ultra-High-Molecular-Weight-Polyethylene based on High Density Polyethylene
+Family: nan
+Properties:
+- Density: 0.945 g/cc g per cc
+- Tensile Strength: 27.1ÿ-ÿ32.9ÿMPa Mpa
+- Elongation at Break: 335 - 401 % %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a graft polymer graftalen? mp-uhhd 00850 melt processable ultra-high-molecular-weight-polyethylene based on high density polyethylene material that provides 0.945 g/cc density per 100 grams.
+
+---
+
+Material: Rchling LAMIGAMID? 700 Ultra High Molecular Weight Polyethylene
+Family: nan
+Properties:
+- Density: 0.950ÿg/cc g per cc
+- Tensile Strength: 39.0ÿMPa Mpa
+- Elongation at Break: nan %
+- Modulus: 1.10ÿGPa Gpa    
+- Serving size reference: 
+
+This is a rchling lamigamid? 700 ultra high molecular weight polyethylene material that provides 0.950ÿg/cc density per 100 grams.
+
+---
+
+Material: Vapla Vaplatec 1000 Ultra High Molecular Weight Polyethylene
+Family: nan
+Properties:
+- Density: 0.930 g/cc g per cc
+- Tensile Strength: 22.0ÿMPa Mpa
+- Elongation at Break: 290% %
+- Modulus: 0.915ÿGPa Gpa    
+- Serving size reference: 
+
+This is a vapla vaplatec 1000 ultra high molecular weight polyethylene material that provides 0.930 g/cc density per 100 grams.
+
+---
+
+Material: Momentive Performance Materials Pyrolytic Boron Nitride (PBN) Coating
+Family: aramid related materials,
+Properties:
+- Density: 1.95ÿ-ÿ2.22ÿg/cc g per cc
+- Tensile Strength: Compressive Strengthÿ Mpa
+- Elongation at Break: 220ÿMPa %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a momentive performance materials pyrolytic boron nitride (pbn) coating material that provides 1.95ÿ-ÿ2.22ÿg/cc density per 100 grams.
+
+---
+
+Material: Silicon Carbide, Reaction-Bonded, SiSiC
+Family: thin composite sheets or laminates.
+Properties:
+- Density: 2.90ÿ-ÿ3.10ÿg/cc g per cc
+- Tensile Strength: 150ÿ-ÿ450ÿMPa Mpa
+- Elongation at Break: nan %
+- Modulus: 350ÿ-ÿ400ÿGPa Gpa    
+- Serving size reference: 
+
+This is a silicon carbide, reaction-bonded, sisic material that provides 2.90ÿ-ÿ3.10ÿg/cc density per 100 grams.
+
+---
+
+Material: COI Ceramics Sylramic? S400 Silicon Carbide Ceramic Matrix Composite, Carbon
+Family: nan
+Properties:
+- Density: 2.10ÿg/cc g per cc
+- Tensile Strength: 5.52ÿMPa Mpa
+- Elongation at Break: 0.53% %
+- Modulus: 110ÿGPa Gpa    
+- Serving size reference: 
+
+This is a coi ceramics sylramic? s400 silicon carbide ceramic matrix composite, carbon material that provides 2.10ÿg/cc density per 100 grams.
+
+---
+
+Material: CoorsTek ADS-995 99.5% Alumina Thin Film
+Family: nan
+Properties:
+- Density: 3.88ÿg/cc g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: 372ÿGPa Gpa    
+- Serving size reference: 
+
+This is a coorstek ads-995 99.5% alumina thin film material that provides 3.88ÿg/cc density per 100 grams.
+
+---
+
+Material: CoorsTek Superstrate? 996 99.6% Alumina Thin Film
+Family: nan
+Properties:
+- Density: 3.88ÿg/cc g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: 372ÿGPa Gpa    
+- Serving size reference: 
+
+This is a coorstek superstrate? 996 99.6% alumina thin film material that provides 3.88ÿg/cc density per 100 grams.
+
+---
+
+Material: ENrG Thin E-Strate? Zirconia Ribbon Ceramic Substrate
+Family: nan
+Properties:
+- Density: 6.04ÿg/cc g per cc
+- Tensile Strength: 248ÿMPa Mpa
+- Elongation at Break: nan %
+- Modulus: 207ÿGPa Gpa    
+- Serving size reference: 
+
+This is a enrg thin e-strate? zirconia ribbon ceramic substrate material that provides 6.04ÿg/cc density per 100 grams.
+
+---
+
+Material: nan
+Family: nan
+Properties:
+- Density: nan g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a nan material that provides nan density per 100 grams.
+
+---
+
+Material: C-Glass Fiber, Generic
+Family: nan
+Properties:
+- Density: 2.52ÿ-ÿ2.56ÿg/cc g per cc
+- Tensile Strength: 3310ÿMPa Mpa
+- Elongation at Break: 4.80% %
+- Modulus: 68.9ÿGPa Gpa    
+- Serving size reference: 
+
+This is a c-glass fiber, generic material that provides 2.52ÿ-ÿ2.56ÿg/cc density per 100 grams.
+
+---
+
+Material: Goodfellow CVD Graphene Film on PET
+Family: nan
+Properties:
+- Density: nan g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a goodfellow cvd graphene film on pet material that provides nan density per 100 grams.
+
+---
+
+Material: Overview of materials for Ionomer
+Family: Polymer
+Properties:
+- Density: 0.930ÿ-ÿ0.982ÿg/cc g per cc
+- Tensile Strength: 24.0ÿ-ÿ41.0ÿMPa Mpa
+- Elongation at Break: 300 - 500 % %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for ionomer material that provides 0.930ÿ-ÿ0.982ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6
+Family: Polymer
+Properties:
+- Density: 1.04ÿ-ÿ1.38ÿg/cc g per cc
+- Tensile Strength: 28.0ÿ-ÿ80.0ÿMPa Mpa
+- Elongation at Break: 4.50 - 460 % %
+- Modulus: 0.100ÿ-ÿ4.00ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6 material that provides 1.04ÿ-ÿ1.38ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 66
+Family: Polymer
+Properties:
+- Density: 1.09ÿ-ÿ1.15ÿg/cc g per cc
+- Tensile Strength: 78.0ÿ-ÿ83.0ÿMPa Mpa
+- Elongation at Break: 40.0 - 170 % %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 66 material that provides 1.09ÿ-ÿ1.15ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Molded
+Family: Polymer
+Properties:
+- Density: 0.882ÿ-ÿ3.50ÿg/cc g per cc
+- Tensile Strength: 2.00ÿ-ÿ77.0ÿMPa Mpa
+- Elongation at Break: 1.40 - 110 % %
+- Modulus: 0.778 - 21.2 GPa  Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), molded material that provides 0.882ÿ-ÿ3.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Heat Resistant, Molded
+Family: polymer
+Properties:
+- Density: 0.890ÿ-ÿ1.50ÿg/cc g per cc
+- Tensile Strength: 19.6ÿ-ÿ63.0ÿMPa Mpa
+- Elongation at Break: 2.50 - 70.0 % %
+- Modulus: 1.70ÿ-ÿ2.70ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), heat resistant, molded material that provides 0.890ÿ-ÿ1.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Impact Grade, Molded
+Family: Polymer
+Properties:
+- Density: 1.00ÿ-ÿ3.50ÿg/cc g per cc
+- Tensile Strength: 24.0ÿ-ÿ138ÿMPa Mpa
+- Elongation at Break: 2.00 - 12.0 % %
+- Modulus: 1.40ÿ-ÿ5.33ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), impact grade, molded material that provides 1.00ÿ-ÿ3.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Transparent, Molded
+Family: Polymer
+Properties:
+- Density: 1.04ÿ-ÿ1.16ÿg/cc g per cc
+- Tensile Strength: 30.0ÿ-ÿ57.0ÿMPa Mpa
+- Elongation at Break: 10.0 - 70.0 % %
+- Modulus: 1.35ÿ-ÿ2.35ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), transparent, molded material that provides 1.04ÿ-ÿ1.16ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Extruded
+Family: Polymer
+Properties:
+- Density: 1.01ÿ-ÿ1.20ÿg/cc g per cc
+- Tensile Strength: 22.1ÿ-ÿ74.0ÿMPa Mpa
+- Elongation at Break: 3.00 - 150 % %
+- Modulus: 1.00ÿ-ÿ2.65ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), extruded material that provides 1.01ÿ-ÿ1.20ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Plating Grade
+Family: Polymer
+Properties:
+- Density: 1.03ÿ-ÿ2.50ÿg/cc g per cc
+- Tensile Strength: 20.0ÿ-ÿ48.0ÿMPa Mpa
+- Elongation at Break: 3.00 - 70.0 % %
+- Modulus: 1.70ÿ-ÿ2.77ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), plating grade material that provides 1.03ÿ-ÿ2.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Unreinforced, Flame Retardant
+Family: Polymer
+Properties:
+- Density: 1.04ÿ-ÿ1.43ÿg/cc g per cc
+- Tensile Strength: 21.6ÿ-ÿ52.0ÿMPa Mpa
+- Elongation at Break: 2.00 - 56.0 % %
+- Modulus: 1.27 - 4.48 GPa  Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), unreinforced, flame retardant material that provides 1.04ÿ-ÿ1.43ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Glass Fiber Filled, Flame Retardant
+Family: Polymer
+Properties:
+- Density: 1.13ÿ-ÿ1.48ÿg/cc g per cc
+- Tensile Strength: 35.0ÿ-ÿ85.0ÿMPa Mpa
+- Elongation at Break: 1.50 - 40.0 % %
+- Modulus: 3.10ÿ-ÿ9.65ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), glass fiber filled, flame retardant material that provides 1.13ÿ-ÿ1.48ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), 10% Glass Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.06ÿ-ÿ1.40ÿg/cc g per cc
+- Tensile Strength: 28.0ÿ-ÿ88.3ÿMPa Mpa
+- Elongation at Break: 2.00 - 10.0 % %
+- Modulus: 2.50ÿ-ÿ5.88ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), 10% glass fiber filled material that provides 1.06ÿ-ÿ1.40ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), 20% Glass Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.10 - 1.45 g/cc  g per cc
+- Tensile Strength: 35.0ÿ-ÿ108ÿMPa Mpa
+- Elongation at Break: 1.00 - 11.0 % %
+- Modulus: 3.50ÿ-ÿ12.2ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), 20% glass fiber filled material that provides 1.10 - 1.45 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), 40% Glass Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.32ÿ-ÿ1.38ÿg/cc g per cc
+- Tensile Strength: 64.0ÿ-ÿ101ÿMPa Mpa
+- Elongation at Break: 1.00 - 4.00 % %
+- Modulus: 5.30ÿ-ÿ11.0ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), 40% glass fiber filled material that provides 1.32ÿ-ÿ1.38ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), 30% Glass Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.17ÿ-ÿ1.50ÿg/cc g per cc
+- Tensile Strength: 39.0 - 120 MPa  Mpa
+- Elongation at Break: 1.00 - 6.00 %  %
+- Modulus: 12.8ÿ-ÿ185ÿMPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), 30% glass fiber filled material that provides 1.17ÿ-ÿ1.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Glass Bead Filled
+Family: Polymer
+Properties:
+- Density: 1.06ÿ-ÿ1.38ÿg/cc g per cc
+- Tensile Strength: 27.6ÿ-ÿ41.4ÿMPa Mpa
+- Elongation at Break: 1.70 - 15.0 % %
+- Modulus: 2.21ÿ-ÿ3.45ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), glass bead filled material that provides 1.06ÿ-ÿ1.38ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), 10% Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.07ÿ-ÿ1.26ÿg/cc g per cc
+- Tensile Strength: 48.3ÿ-ÿ103ÿMPa Mpa
+- Elongation at Break: 0.700 - 10.0 % %
+- Modulus: 3.45 - 11.7 GPa  Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), 10% carbon fiber filled material that provides 1.07ÿ-ÿ1.26ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), 20% Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.10ÿ-ÿ1.30ÿg/cc g per cc
+- Tensile Strength: 75.0ÿ-ÿ150ÿMPa Mpa
+- Elongation at Break: 1.00 - 2.00 % %
+- Modulus: 10.0ÿ-ÿ13.8ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), 20% carbon fiber filled material that provides 1.10ÿ-ÿ1.30ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), 30% Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.15ÿ-ÿ1.38ÿg/cc g per cc
+- Tensile Strength: 88.3ÿ-ÿ124ÿMPa Mpa
+- Elongation at Break: 1.00 - 3.00 % %
+- Modulus: 17.2ÿ-ÿ19.3ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), 30% carbon fiber filled material that provides 1.15ÿ-ÿ1.38ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), PTFE Filled
+Family: Polymer
+Properties:
+- Density: 1.05ÿ-ÿ1.32ÿg/cc g per cc
+- Tensile Strength: 34.5ÿ-ÿ44.8ÿMPa Mpa
+- Elongation at Break: 2.00 - 25.0 % %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), ptfe filled material that provides 1.05ÿ-ÿ1.32ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Stainless Steel Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.00ÿ-ÿ1.51ÿg/cc g per cc
+- Tensile Strength: 27.6ÿ-ÿ45.0ÿMPa Mpa
+- Elongation at Break: 1.00 - 10.0 % %
+- Modulus: 2.28ÿ-ÿ3.10ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), stainless steel fiber filled material that provides 1.00ÿ-ÿ1.51ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Carbon Black Filled
+Family: Polymer
+Properties:
+- Density: 1.03ÿ-ÿ1.14ÿg/cc g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: 2.00 - 11.0 % %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), carbon black filled material that provides 1.03ÿ-ÿ1.14ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), NCG Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.07ÿ-ÿ1.51ÿg/cc g per cc
+- Tensile Strength: 44.8ÿ-ÿ121ÿMPa Mpa
+- Elongation at Break: 1.00 - 2.00 % %
+- Modulus: 5.17ÿ-ÿ17.9ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), ncg fiber filled material that provides 1.07ÿ-ÿ1.51ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS), Sheet
+Family: Polymer
+Properties:
+- Density: 0.775ÿ-ÿ1.28ÿg/cc g per cc
+- Tensile Strength: 15.9ÿ-ÿ42.0ÿMPa Mpa
+- Elongation at Break: 7.80 - 190 % %
+- Modulus: 1.83ÿ-ÿ5.33ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs), sheet material that provides 0.775ÿ-ÿ1.28ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS)/Nylon Blend
+Family: Polymer
+Properties:
+- Density: 1.04ÿ-ÿ1.21ÿg/cc g per cc
+- Tensile Strength: 4.00ÿ-ÿ63.8ÿMPa Mpa
+- Elongation at Break: 3.10 - 230 % %
+- Modulus: 0.900ÿ-ÿ5.30ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs)/nylon blend material that provides 1.04ÿ-ÿ1.21ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylonitrile Butadiene Styrene (ABS)/Nylon Blend, Glass Reinforced
+Family: Polymer
+Properties:
+- Density: 1.06ÿ-ÿ1.53ÿg/cc g per cc
+- Tensile Strength: 31.0ÿ-ÿ130ÿMPa Mpa
+- Elongation at Break: 2.00 - 200 % %
+- Modulus: 1.20ÿ-ÿ8.10ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylonitrile butadiene styrene (abs)/nylon blend, glass reinforced material that provides 1.06ÿ-ÿ1.53ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polycarbonate/ABS Alloy, Unreinforced
+Family: Polymer
+Properties:
+- Density: 0.960ÿ-ÿ1.50ÿg/cc g per cc
+- Tensile Strength: 2.80ÿ-ÿ586ÿMPa Mpa
+- Elongation at Break: 0.800 - 1230 % %
+- Modulus: 1.67ÿ-ÿ11.1ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polycarbonate/abs alloy, unreinforced material that provides 0.960ÿ-ÿ1.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polycarbonate/ABS Alloy, Glass Fiber Filled
+Family: Polymer
+Properties:
+- Density: 0.962ÿ-ÿ1.48ÿg/cc g per cc
+- Tensile Strength: 27.0ÿ-ÿ131ÿMPa Mpa
+- Elongation at Break: 0.600 - 109 % %
+- Modulus: 2.41ÿ-ÿ13.0ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polycarbonate/abs alloy, glass fiber filled material that provides 0.962ÿ-ÿ1.48ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polycarbonate/ABS Alloy, Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.17ÿ-ÿ1.40ÿg/cc g per cc
+- Tensile Strength: 67.6ÿ-ÿ165ÿMPa Mpa
+- Elongation at Break: 0.500 - 4.00 % %
+- Modulus: 4.61ÿ-ÿ16.5ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polycarbonate/abs alloy, carbon fiber filled material that provides 1.17ÿ-ÿ1.40ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polycarbonate/ABS Alloy, NCG Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.18ÿ-ÿ1.45ÿg/cc g per cc
+- Tensile Strength: 62.1ÿ-ÿ153ÿMPa Mpa
+- Elongation at Break: 0.500 - 5.00 % %
+- Modulus: 4.48ÿ-ÿ17.9ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polycarbonate/abs alloy, ncg fiber filled material that provides 1.18ÿ-ÿ1.45ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polycarbonate/ABS Alloy, Antistat/Conductive
+Family: Polymer
+Properties:
+- Density: 1.14 - 1.53 g/cc  g per cc
+- Tensile Strength: 37.9ÿ-ÿ124ÿMPa Mpa
+- Elongation at Break: 1.00 - 10.0 % %
+- Modulus: 1.72ÿ-ÿ12.4ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polycarbonate/abs alloy, antistat/conductive material that provides 1.14 - 1.53 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for ABS/Polyurethane Alloy
+Family: Polymer
+Properties:
+- Density: 0.970ÿ-ÿ1.20ÿg/cc g per cc
+- Tensile Strength: 16.0ÿ-ÿ67.0ÿMPa Mpa
+- Elongation at Break: 180 - 320 % %
+- Modulus: 0.0827ÿ-ÿ0.745ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for abs/polyurethane alloy material that provides 0.970ÿ-ÿ1.20ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acetal Copolymer, Unreinforced
+Family: Polymer
+Properties:
+- Density: 0.950ÿ-ÿ1.71ÿg/cc g per cc
+- Tensile Strength: 21.0ÿ-ÿ75.8ÿMPa Mpa
+- Elongation at Break: 1.50 - 250 % %
+- Modulus: 0.586ÿ-ÿ11.7ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acetal copolymer, unreinforced material that provides 0.950ÿ-ÿ1.71ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acetal Copolymer, Impact Modified
+Family: Polymer
+Properties:
+- Density: 1.07ÿ-ÿ1.41ÿg/cc g per cc
+- Tensile Strength: 26.0ÿ-ÿ56.0ÿMPa Mpa
+- Elongation at Break: 10.0 - 300 % %
+- Modulus: 0.772ÿ-ÿ2.45ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acetal copolymer, impact modified material that provides 1.07ÿ-ÿ1.41ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acetal Copolymer, Silicone Filled
+Family: Polymer
+Properties:
+- Density: 1.29ÿ-ÿ1.62ÿg/cc g per cc
+- Tensile Strength: 41.4ÿ-ÿ110ÿMPa Mpa
+- Elongation at Break: 2.50 - 90.0 % %
+- Modulus: 2.25ÿ-ÿ2.90ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acetal copolymer, silicone filled material that provides 1.29ÿ-ÿ1.62ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acetal Copolymer, Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.40 - 1.58 g/cc  g per cc
+- Tensile Strength: 65.0ÿ-ÿ217ÿMPa Mpa
+- Elongation at Break: 0.600 - 25.0 % %
+- Modulus: 2.40ÿ-ÿ23.4ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acetal copolymer, carbon fiber filled material that provides 1.40 - 1.58 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Acetal Copolymer, Aramid Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.01ÿ-ÿ1.52ÿg/cc g per cc
+- Tensile Strength: 45.0ÿ-ÿ82.7ÿMPa Mpa
+- Elongation at Break: 2.00 - 12.0 % %
+- Modulus: 2.70ÿ-ÿ4.83ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acetal copolymer, aramid fiber filled material that provides 1.01ÿ-ÿ1.52ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic, General Purpose, Molded
+Family: Polymer
+Properties:
+- Density: 0.700 - 1.30 g/cc  g per cc
+- Tensile Strength: 19.3ÿ-ÿ85.0ÿMPa Mpa
+- Elongation at Break: 1.00 - 85.0 % %
+- Modulus: 0.950ÿ-ÿ3.79ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic, general purpose, molded material that provides 0.700 - 1.30 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic, Extruded
+Family: Polymer
+Properties:
+- Density: 0.942ÿ-ÿ1.19ÿg/cc g per cc
+- Tensile Strength: 29.0ÿ-ÿ93.1ÿMPa Mpa
+- Elongation at Break: 2.00 - 59.0 %  %
+- Modulus: 0.0420ÿ-ÿ3.80ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic, extruded material that provides 0.942ÿ-ÿ1.19ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic, UV Stabilized, Molded
+Family: Polymer
+Properties:
+- Density: 1.15ÿ-ÿ1.20ÿg/cc g per cc
+- Tensile Strength: 32.4ÿ-ÿ80.0ÿMPa Mpa
+- Elongation at Break: 2.00 - 50.0 % %
+- Modulus: 1.79ÿ-ÿ3.45ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic, uv stabilized, molded material that provides 1.15ÿ-ÿ1.20ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic, Optical Grade, Molded
+Family: Polymer
+Properties:
+- Density: 1.11ÿ-ÿ1.19ÿg/cc g per cc
+- Tensile Strength: 38.0ÿ-ÿ89.3ÿMPa Mpa
+- Elongation at Break: 2.00 - 40.0 % %
+- Modulus: 1.76ÿ-ÿ3.65ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic, optical grade, molded material that provides 1.11ÿ-ÿ1.19ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic, Gamma Radiation Resistant, Molded
+Family: Polymer
+Properties:
+- Density: 1.08ÿ-ÿ1.17ÿg/cc g per cc
+- Tensile Strength: 36.3ÿ-ÿ50.3ÿMPa Mpa
+- Elongation at Break: 5.00 - 50.0 % %
+- Modulus: 1.38ÿ-ÿ2.96ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic, gamma radiation resistant, molded material that provides 1.08ÿ-ÿ1.17ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic, Optical Sheet
+Family: Polymer
+Properties:
+- Density: 1.15ÿ-ÿ1.19ÿg/cc g per cc
+- Tensile Strength: 54.0ÿ-ÿ83.0ÿMPa Mpa
+- Elongation at Break: 4.00 - 5.80 % %
+- Modulus: 1.52ÿ-ÿ3.38ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic, optical sheet material that provides 1.15ÿ-ÿ1.19ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic/Polycarbonate Alloy
+Family: Polymer
+Properties:
+- Density: 1.12ÿ-ÿ1.29ÿg/cc g per cc
+- Tensile Strength: 40.3ÿ-ÿ61.0ÿMPa Mpa
+- Elongation at Break: 8.00 - 88.0 % %
+- Modulus: 1.72ÿ-ÿ2.60ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic/polycarbonate alloy material that provides 1.12ÿ-ÿ1.29ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Acrylic/Polycarbonate Alloy, Carbon Fiber Filler
+Family: Polymer
+Properties:
+- Density: 1.21ÿ-ÿ1.36ÿg/cc g per cc
+- Tensile Strength: 93.1ÿ-ÿ145ÿMPa Mpa
+- Elongation at Break: 1.20 - 2.30 % %
+- Modulus: 7.65ÿ-ÿ24.1ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for acrylic/polycarbonate alloy, carbon fiber filler material that provides 1.21ÿ-ÿ1.36ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Methacrylate Adhesive
+Family: Polymer
+Properties:
+- Density: 0.500 - 1.50 g/cc  g per cc
+- Tensile Strength: 0.0276ÿ-ÿ40.0ÿMPa Mpa
+- Elongation at Break: 5.00 - 300 % %
+- Modulus: 0.0689ÿ-ÿ1.90ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for methacrylate adhesive material that provides 0.500 - 1.50 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Cyanoacrylate Adhesive
+Family: Polymer
+Properties:
+- Density: 0.126ÿ-ÿ2.10ÿg/cc g per cc
+- Tensile Strength: 2.48ÿ-ÿ55.2ÿMPa Mpa
+- Elongation at Break: 2.00 - 340 % %
+- Modulus: 0.0111ÿ-ÿ2.76ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for cyanoacrylate adhesive material that provides 0.126ÿ-ÿ2.10ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Diallyl Phthalate (DAP), Cast, Mineral Filler
+Family: Polymer
+Properties:
+- Density: 1.66ÿ-ÿ1.86ÿg/cc g per cc
+- Tensile Strength: 31.0ÿ-ÿ55.2ÿMPa Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for diallyl phthalate (dap), cast, mineral filler material that provides 1.66ÿ-ÿ1.86ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Cellulose Acetate Propionate, Molded
+Family: Polymer
+Properties:
+- Density: 1.17 - 1.21 g/cc  g per cc
+- Tensile Strength: 8.00ÿ-ÿ8.00ÿMPa Mpa
+- Elongation at Break: 34.0 - 86.0 % %
+- Modulus: 0.927ÿ-ÿ1.85ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for cellulose acetate propionate, molded material that provides 1.17 - 1.21 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Epoxy, Molded, Glass Fiber Filler
+Family: Polymer
+Properties:
+- Density: 1.11ÿ-ÿ2.20ÿg/cc g per cc
+- Tensile Strength: 50.0ÿ-ÿ2850ÿMPa Mpa
+- Elongation at Break: 0.600 - 2.04 % %
+- Modulus: 6.00ÿ-ÿ89.6ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for epoxy, molded, glass fiber filler material that provides 1.11ÿ-ÿ2.20ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Epoxy, Molded, Mineral Filled
+Family: Polymer
+Properties:
+- Density: 1.50ÿ-ÿ2.14ÿg/cc g per cc
+- Tensile Strength: 30.0ÿ-ÿ97.0ÿMPa Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for epoxy, molded, mineral filled material that provides 1.50ÿ-ÿ2.14ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Epoxy, Cast, Metal Filled
+Family: Polymer
+Properties:
+- Density: 0.959ÿ-ÿ3.12ÿg/cc g per cc
+- Tensile Strength: 0.159ÿ-ÿ59.6ÿMPa Mpa
+- Elongation at Break: 0.000 - 130 % %
+- Modulus: 4.14ÿ-ÿ49.6ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for epoxy, cast, metal filled material that provides 0.959ÿ-ÿ3.12ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Epoxy, High Temperature
+Family: Polymer
+Properties:
+- Density: 0.990ÿ-ÿ2.26ÿg/cc g per cc
+- Tensile Strength: 13.8ÿ-ÿ345ÿMPa Mpa
+- Elongation at Break: 1.00 - 50.0 % %
+- Modulus: 1.68ÿ-ÿ5.40ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for epoxy, high temperature material that provides 0.990ÿ-ÿ2.26ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Epoxy, Electrically Conductive
+Family: Polymer
+Properties:
+- Density: 0.940ÿ-ÿ5.30ÿg/cc g per cc
+- Tensile Strength: 13.8ÿ-ÿ55.2ÿMPa Mpa
+- Elongation at Break: 0.200 - 55.0 %  %
+- Modulus: 0.146ÿ-ÿ7.87ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for epoxy, electrically conductive material that provides 0.940ÿ-ÿ5.30ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Epoxy Adhesive
+Family: Polymer
+Properties:
+- Density: 0.137ÿ-ÿ4.80ÿg/cc g per cc
+- Tensile Strength: 0.276ÿ-ÿ766ÿMPa Mpa
+- Elongation at Break: 0.000 - 250 % %
+- Modulus: 0.0345ÿ-ÿ59.1ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for epoxy adhesive material that provides 0.137ÿ-ÿ4.80ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Epoxy/Carbon Fiber Composite
+Family: Polymer
+Properties:
+- Density: 1.15ÿ-ÿ2.25ÿg/cc g per cc
+- Tensile Strength: 0.917ÿ-ÿ4140ÿMPa Mpa
+- Elongation at Break: 0.430 - 11.0 % %
+- Modulus: 2.62ÿ-ÿ520ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for epoxy/carbon fiber composite material that provides 1.15ÿ-ÿ2.25ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Ethylene Vinyl Alcohol (EVOH)
+Family: Polymer
+Properties:
+- Density: 1.12ÿ-ÿ1.24ÿg/cc g per cc
+- Tensile Strength: 37.0ÿ-ÿ74.0ÿMPa Mpa
+- Elongation at Break: 130 - 330 % %
+- Modulus: 1.08ÿ-ÿ3.10ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for ethylene vinyl alcohol (evoh) material that provides 1.12ÿ-ÿ1.24ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polytetrafluoroethylene (PTFE), Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.98ÿ-ÿ2.65ÿg/cc g per cc
+- Tensile Strength: 3.00ÿ-ÿ27.6ÿMPa Mpa
+- Elongation at Break: 3.00 - 2000 % %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polytetrafluoroethylene (ptfe), carbon fiber filled material that provides 1.98ÿ-ÿ2.65ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polyetheretherketone, Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.32 - 1.90 g/cc  g per cc
+- Tensile Strength: 0.265ÿ-ÿ2900ÿMPa Mpa
+- Elongation at Break: 0.300 - 7.00 % %
+- Modulus: 1.00ÿ-ÿ172ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polyetheretherketone, carbon fiber filled material that provides 1.32 - 1.90 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Polyetheretherketone, PEEK, Aramid Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.31ÿ-ÿ1.50ÿg/cc g per cc
+- Tensile Strength: 75.0ÿ-ÿ193ÿMPa Mpa
+- Elongation at Break: 1.00 - 6.00 % %
+- Modulus: 4.00ÿ-ÿ20.7ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polyetheretherketone, peek, aramid fiber filled material that provides 1.31ÿ-ÿ1.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Polyaryletherketone (PAEK), Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.33ÿ-ÿ1.51ÿg/cc g per cc
+- Tensile Strength: 95.0ÿ-ÿ262ÿMPa Mpa
+- Elongation at Break: 0.800 - 25.0 % %
+- Modulus: 2.96ÿ-ÿ55.8ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for polyaryletherketone (paek), carbon fiber filled material that provides 1.33ÿ-ÿ1.51ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Liquid Crystal Polymer (LCP), Unfilled
+Family: Polymer
+Properties:
+- Density: 1.38 - 2.02 g/cc  g per cc
+- Tensile Strength: 32.0ÿ-ÿ182ÿMPa Mpa
+- Elongation at Break: 0.600 - 4.10 % %
+- Modulus: 7.10ÿ-ÿ18.0ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for liquid crystal polymer (lcp), unfilled material that provides 1.38 - 2.02 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Liquid Crystal Polymer (LCP), Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.39ÿ-ÿ1.61ÿg/cc g per cc
+- Tensile Strength: 1.39 - 1.61 g/cc Mpa
+- Elongation at Break: 100ÿ-ÿ200ÿMPa %
+- Modulus: 9.31ÿ-ÿ36.2ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for liquid crystal polymer (lcp), carbon fiber filled material that provides 1.39ÿ-ÿ1.61ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Liquid Crystal Polymer (LCP), Mineral Filled
+Family: Polymer
+Properties:
+- Density: 1.52 - 1.89 g/cc  g per cc
+- Tensile Strength: 76.0ÿ-ÿ175ÿMPa Mpa
+- Elongation at Break: 1.20 - 5.50 % %
+- Modulus: 7.03ÿ-ÿ22.0ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for liquid crystal polymer (lcp), mineral filled material that provides 1.52 - 1.89 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Melamine-Phenolic Copolymer
+Family: Polymer
+Properties:
+- Density: 1.50ÿ-ÿ1.81ÿg/cc g per cc
+- Tensile Strength: 53.0ÿ-ÿ76.0ÿMPa Mpa
+- Elongation at Break: 0.470 - 0.950 % %
+- Modulus: 5.00ÿ-ÿ13.3ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for melamine-phenolic copolymer material that provides 1.50ÿ-ÿ1.81ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 46, Glass Fiber Reinforced
+Family: Polymer
+Properties:
+- Density: 1.17ÿ-ÿ1.87ÿg/cc g per cc
+- Tensile Strength: 60.0ÿ-ÿ280ÿMPa Mpa
+- Elongation at Break: 1.30 - 15.0 % %
+- Modulus: 1.00ÿ-ÿ25.5ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 46, glass fiber reinforced material that provides 1.17ÿ-ÿ1.87ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, Unreinforced
+Family: Polymer
+Properties:
+- Density: 0.670ÿ-ÿ4.50ÿg/cc g per cc
+- Tensile Strength: 10.0ÿ-ÿ225ÿMPa Mpa
+- Elongation at Break: 0.400 - 500 % %
+- Modulus: 0.210ÿ-ÿ17.0ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, unreinforced material that provides 0.670ÿ-ÿ4.50ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, Impact Grade
+Family: Polymer
+Properties:
+- Density: 1.00ÿ-ÿ4.00ÿg/cc g per cc
+- Tensile Strength: 12.0ÿ-ÿ470ÿMPa Mpa
+- Elongation at Break: 1.50 - 500 % %
+- Modulus: 0.145ÿ-ÿ3.30ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, impact grade material that provides 1.00ÿ-ÿ4.00ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, Film Grade
+Family: Polymer
+Properties:
+- Density: 1.04ÿ-ÿ1.38ÿg/cc g per cc
+- Tensile Strength: 48.0ÿ-ÿ112ÿMPa Mpa
+- Elongation at Break: 3.50 - 400 % %
+- Modulus: 0.100ÿ-ÿ4.00ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, film grade material that provides 1.04ÿ-ÿ1.38ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, Nucleated
+Family: Polymer
+Properties:
+- Density: 1.10ÿ-ÿ1.41ÿg/cc g per cc
+- Tensile Strength: 40.0 - 100 Mpa Mpa
+- Elongation at Break: 3.00 - 240 % %
+- Modulus: 0.400ÿ-ÿ5.70ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, nucleated material that provides 1.10ÿ-ÿ1.41ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, PTFE Filled
+Family: Polymer
+Properties:
+- Density: 1.16ÿ-ÿ1.49ÿg/cc g per cc
+- Tensile Strength: 18.0ÿ-ÿ150ÿMPa Mpa
+- Elongation at Break: 2.00 - 25.0 % %
+- Modulus: 2.40ÿ-ÿ9.10ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, ptfe filled material that provides 1.16ÿ-ÿ1.49ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, 20% Mineral Filled
+Family: Polymer
+Properties:
+- Density: 1.05ÿ-ÿ1.66ÿg/cc g per cc
+- Tensile Strength: 33.0ÿ-ÿ140ÿMPa Mpa
+- Elongation at Break: 0.900 - 50.0 % %
+- Modulus: 1.10ÿ-ÿ6.25ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, 20% mineral filled material that provides 1.05ÿ-ÿ1.66ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, Mineral Reinforced, Impact Grade
+Family: Polymer
+Properties:
+- Density: 1.17 - 1.55 g/cc g per cc
+- Tensile Strength: 30.0 - 100 MPa  Mpa
+- Elongation at Break: 2.00 - 45.0 % %
+- Modulus: 1.40ÿ-ÿ5.17ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, mineral reinforced, impact grade material that provides 1.17 - 1.55 g/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 6, Carbon Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.11ÿ-ÿ1.90ÿg/cc g per cc
+- Tensile Strength: 1.00ÿ-ÿ1910ÿMPa Mpa
+- Elongation at Break: 1.00 - 20.0 % %
+- Modulus: 3.50ÿ-ÿ135ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 6, carbon fiber filled material that provides 1.11ÿ-ÿ1.90ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 66, Film
+Family: Polymer
+Properties:
+- Density: 1.09ÿ-ÿ1.15ÿg/cc g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: nan %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 66, film material that provides 1.09ÿ-ÿ1.15ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 66, Aramid Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.14ÿ-ÿ1.32ÿg/cc g per cc
+- Tensile Strength: 48.3ÿ-ÿ138ÿMPa Mpa
+- Elongation at Break: 1.60 - 10.0 % %
+- Modulus: 2.41ÿ-ÿ11.0ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 66, aramid fiber filled material that provides 1.14ÿ-ÿ1.32ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 66, Carbon Fiber/PTFE Filled
+Family: Polymer
+Properties:
+- Density: 1.17 - 1.54 g/cc  g per cc
+- Tensile Strength: 75.8ÿ-ÿ241ÿMPa Mpa
+- Elongation at Break: 0.900 - 4.00 % %
+- Modulus: 3.45ÿ-ÿ32.4ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 66, carbon fiber/ptfe filled material that provides 1.17 - 1.54 g/cc  density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 66, Mineral Filled, Impact Grade
+Family: Polymer
+Properties:
+- Density: 1.22ÿ-ÿ1.48ÿg/cc g per cc
+- Tensile Strength: 49.6ÿ-ÿ124ÿMPa Mpa
+- Elongation at Break: 2.50 - 18.0 % %
+- Modulus: 3.25ÿ-ÿ7.24ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 66, mineral filled, impact grade material that provides 1.22ÿ-ÿ1.48ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 66, Mineral Filled, NCG Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.14ÿ-ÿ1.38ÿg/cc g per cc
+- Tensile Strength: 68.9ÿ-ÿ207ÿMPa Mpa
+- Elongation at Break: 0.500 - 5.00 % %
+- Modulus: 5.17ÿ-ÿ13.1ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 66, mineral filled, ncg fiber filled material that provides 1.14ÿ-ÿ1.38ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 11 + Carbon Fiber
+Family: Polymer
+Properties:
+- Density: 1.00ÿ-ÿ1.26ÿg/cc g per cc
+- Tensile Strength: 41.0ÿ-ÿ200ÿMPa Mpa
+- Elongation at Break: 1.00 - 11.0 % %
+- Modulus: 1.45ÿ-ÿ22.8ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 11 + carbon fiber material that provides 1.00ÿ-ÿ1.26ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Nylon 12
+Family: Polymer
+Properties:
+- Density: 0.00147 - 11.0 g/cc g per cc
+- Tensile Strength: nan Mpa
+- Elongation at Break: 0.350 - 588 % %
+- Modulus: 0.0400ÿ-ÿ100ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for nylon 12 material that provides 0.00147 - 11.0 g/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Phenolic, Ablative Coating
+Family: Polymer
+Properties:
+- Density: 1.25ÿ-ÿ1.85ÿg/cc g per cc
+- Tensile Strength: 4.30ÿ-ÿ40.4ÿMPa Mpa
+- Elongation at Break: 0.660 - 12.5 % %
+- Modulus: nan Gpa    
+- Serving size reference: 
+
+This is a overview of materials for phenolic, ablative coating material that provides 1.25ÿ-ÿ1.85ÿg/cc density per 100 grams.
+
+---
+
+Material: Overview of materials for Phenolic, Novolac, Mineral/Fiber Filled
+Family: Polymer
+Properties:
+- Density: 1.46ÿ-ÿ1.65ÿg/cc g per cc
+- Tensile Strength: 41.0ÿ-ÿ117ÿMPa Mpa
+- Elongation at Break: nan %
+- Modulus: 9.00ÿ-ÿ11.0ÿGPa Gpa    
+- Serving size reference: 
+
+This is a overview of materials for phenolic, novolac, mineral/fiber filled material that provides 1.46ÿ-ÿ1.65ÿg/cc density per 100 grams.
