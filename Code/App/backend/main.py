@@ -26,9 +26,12 @@ from agents import Agent, Runner, function_tool, trace
 # ---------------------------------------------------------------------------
 
 
-def load_env(env_path: str = ".env") -> dict:
+def load_env(env_path: str | Path = ".env") -> dict:
     """Read variables from a .env file into os.environ and return them."""
     path = Path(env_path)
+    if not path.is_absolute():
+        path = Path(__file__).resolve().parent / path
+
     if not path.exists():
         # Not fatal for the API — env vars may already be set on the host
         # (e.g. Render/Railway/Fly environment settings).
@@ -48,7 +51,7 @@ def load_env(env_path: str = ".env") -> dict:
     return loaded
 
 
-load_env(".env")
+load_env(Path(__file__).resolve().parent / ".env")
 
 # ---------------------------------------------------------------------------
 # Materials DB + agent tool
@@ -128,11 +131,24 @@ async def health():
     return {"status": "ok"}
 
 
+def ensure_openai_api_key() -> None:
+    if not os.environ.get("OPENAI_API_KEY"):
+        raise HTTPException(
+            status_code=500,
+            detail=(
+                "OPENAI_API_KEY is not set. "
+                "Set it in App/backend/.env or in the process environment before starting the API."
+            ),
+        )
+
+
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
     message = request.message.strip()
     if not message:
         raise HTTPException(status_code=400, detail="message must not be empty")
+
+    ensure_openai_api_key()
 
     with trace("Synchronized Figure Skating Materials Agent"):
         result = await Runner.run(material_agent, message)

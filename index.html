@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>BladeGuard Synchro | Hand Protection for Synchronized Skating</title>
-  <meta name="description" content="Development of ultra-thin, high-impact protective wearables for hand and finger safety in synchronized figure skating. Seeking research collaboration.">
-  <meta name="author" content="BladeGuard Synchro Research">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <title>GlideRise — Glove Materials Assistant</title>
+  <meta name="description" content="Ask about grip, warmth, and durability for synchronized figure skating gloves.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -21,6 +21,7 @@
       color: #0a1e2f;
       line-height: 1.5;
       scroll-behavior: smooth;
+      min-height: 100vh;
     }
 
     .container {
@@ -69,25 +70,34 @@
       border: 0.5px solid rgba(2,84,128,0.2);
     }
 
+    .site-logo {
+      width: 64px;
+      height: auto;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 12px;
+      box-shadow: 0 6px 18px rgba(15,59,92,0.12);
+      vertical-align: middle;
+    }
+
     h1 {
-      font-size: 3.2rem;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
       font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #022b3f, #1f6392);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
       margin-bottom: 1rem;
+      max-width: 11ch;
+      color: #0a1e2f;
     }
 
     .hero-sub {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
       font-weight: 500;
       color: #1e4663;
       border-left: 4px solid #3b82f6;
       padding-left: 1.2rem;
       margin: 1rem 0 1.5rem 0;
+      max-width: 46ch;
     }
 
     .btn-group {
@@ -97,20 +107,24 @@
       margin: 2rem 0 1rem;
     }
 
+    .btn-primary,
+    .btn-outline,
+    .btn-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.85rem 1.8rem;
+      border-radius: 60px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
     .btn-primary {
       background: #0f3b5c;
       color: white;
       border: none;
-      padding: 0.85rem 2rem;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
@@ -124,39 +138,21 @@
       background: transparent;
       border: 1.5px solid #0f3b5c;
       color: #0f3b5c;
-      padding: 0.85rem 2rem;
-      border-radius: 60px;
-      font-weight: 600;
-      transition: 0.2s;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
     }
 
     .btn-outline:hover {
       background: #0f3b5c;
       color: white;
-      border-color: #0f3b5c;
     }
 
     .btn-github {
       background: #1f1f2e;
       color: white;
       border: none;
-      padding: 0.85rem 2rem;
-      border-radius: 60px;
-      font-weight: 600;
-      transition: 0.2s;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
     }
 
     .btn-github:hover {
       background: #000000;
-      transform: translateY(-2px);
     }
 
     section {
@@ -172,6 +168,7 @@
       position: relative;
       display: inline-block;
     }
+
     .section-title:after {
       content: '';
       position: absolute;
@@ -198,16 +195,19 @@
       transition: all 0.2s;
       border: 1px solid #eef2f8;
     }
+
     .card:hover {
       transform: translateY(-4px);
       border-color: #cbdde9;
       box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
     }
+
     .card-icon {
       font-size: 2.2rem;
       color: #1f6392;
       margin-bottom: 1.2rem;
     }
+
     .card h3 {
       font-size: 1.4rem;
       margin-bottom: 0.75rem;
@@ -221,23 +221,22 @@
       border-radius: 20px;
       margin: 1.5rem 0;
     }
+
     .fail-list p {
       font-weight: 700;
       margin-bottom: 0.75rem;
     }
+
     .fail-list ul {
       list-style: none;
       padding-left: 0;
     }
+
     .fail-list li {
       margin: 0.5rem 0;
       display: flex;
       align-items: center;
       gap: 10px;
-    }
-    .fail-list i.fa-times {
-      color: #c2410c;
-      width: 20px;
     }
 
     .outcome-highlight {
@@ -247,12 +246,14 @@
       text-align: center;
       border: 1px solid #cde3ef;
     }
+
     .why-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 2rem;
       margin: 2rem 0;
     }
+
     .why-item {
       background: #ffffffcc;
       backdrop-filter: blur(2px);
@@ -261,11 +262,13 @@
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.02);
     }
+
     .why-item i {
       font-size: 2.2rem;
       color: #2c7da0;
       margin-bottom: 1rem;
     }
+
     .collab-box {
       background: #0a1e2f;
       color: white;
@@ -274,10 +277,12 @@
       margin-top: 1rem;
       text-align: center;
     }
+
     .collab-box h3 {
       font-size: 1.8rem;
       font-weight: 600;
     }
+
     .collab-list {
       display: flex;
       flex-wrap: wrap;
@@ -285,12 +290,14 @@
       gap: 1.2rem;
       margin: 1.5rem 0;
     }
+
     .collab-list span {
       background: rgba(255,255,255,0.15);
       padding: 0.4rem 1rem;
       border-radius: 40px;
       font-size: 0.9rem;
     }
+
     .repo-card {
       background: #0d2b3e;
       border-radius: 1.5rem;
@@ -298,15 +305,18 @@
       text-align: center;
       margin-top: 1rem;
     }
+
     .repo-card a {
       color: #7ab7d4;
       font-family: monospace;
       font-size: 1.1rem;
       word-break: break-all;
     }
+
     .repo-card a:hover {
       color: white;
     }
+
     footer {
       padding: 2rem 0;
       text-align: center;
@@ -314,11 +324,223 @@
       color: #4a627a;
       background: #f1f5f9;
     }
+
+    .chat-section {
+      padding: 4rem 0;
+    }
+
+    .chat-card {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .chat-card .card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      padding: 1.5rem 1.8rem;
+      border-bottom: 1px solid #e2edf2;
+      background: #f8fbff;
+    }
+
+    .chat-header p {
+      margin: 0;
+      font-weight: 700;
+      color: #0a1e2f;
+    }
+
+    .chat-log {
+      height: 360px;
+      overflow-y: auto;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      background: #ffffff;
+    }
+
+    .chat-controls {
+      display: flex;
+      gap: 10px;
+      border-top: 1px solid #e2edf2;
+      padding: 14px;
+      background: #f8fafc;
+    }
+
+    .chat-controls input[type=text] {
+      flex: 1;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .chat-controls button {
+      background: #0f3b5c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 0 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .chat-controls button:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    .chat-details {
+      padding: 1rem 1.8rem 1.8rem;
+      background: #ffffff;
+      border-top: 1px solid #e2edf2;
+    }
+
+    .chat-details input {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 14px;
+      color: #0a1e2f;
+    }
+
+    .chat-widget {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      width: min(360px, calc(100vw - 32px));
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      z-index: 999;
+      box-shadow: 0 30px 70px rgba(15, 50, 85, 0.18);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+      transform: translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .chat-widget.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .chat-toggle {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #0f3b5c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 20px 40px rgba(15, 59, 92, 0.22);
+      z-index: 1000;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .chat-toggle:hover {
+      transform: translateY(-2px);
+      background: #194768;
+    }
+
+    .chat-popup {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 520px;
+      max-height: 80vh;
+    }
+
+    .chat-popup .chat-header {
+      padding: 1.4rem 1.6rem;
+      background: #0f3b5c;
+      color: white;
+      border-bottom: 1px solid rgba(15,59,92,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-popup .chat-header p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .chat-popup .close-chat {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      opacity: 0.82;
+    }
+
+    .chat-popup .close-chat:hover {
+      opacity: 1;
+    }
+
+    .chat-popup .chat-log {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.4rem;
+      background: #f7fbff;
+    }
+
+    .chat-popup .chat-controls {
+      position: sticky;
+      bottom: 0;
+      display: flex;
+      gap: 10px;
+      border-top: 1px solid #e2edf2;
+      padding: 14px;
+      background: white;
+    }
+
     @media (max-width: 700px) {
       h1 { font-size: 2.2rem; }
       .hero-sub { font-size: 1.1rem; }
       .container { padding: 0 1.2rem; }
-      section { padding: 2.5rem 0; }
+      .chat-log { height: 300px; }
+      .chat-widget {
+        right: 16px;
+        bottom: 16px;
+      }
+      .chat-toggle {
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .chat-widget {
+        width: calc(100vw - 20px);
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2.2rem; }
+      .hero-sub { font-size: 1.1rem; }
+      .container { padding: 0 1.2rem; }
+      .chat-log { height: 300px; }
     }
   </style>
 </head>
@@ -326,15 +548,16 @@
 
 <div class="hero">
   <div class="container hero-content">
+    <img src="GlideRise.png" alt="GlideRise logo" class="site-logo" onerror="this.style.display='none'" />
     <div class="badge">
       <i class="fab fa-github" style="margin-right: 6px;"></i> Open Source Research · Active Development
     </div>
     <h1>Protecting the hands that lift, hold & catch — at 15 mph on ice</h1>
     <div class="hero-sub">
-      Development of Ultra-Thin, High-Impact Protective Wearables for Hand and Finger Safety in Synchronized Figure Skating
+      Development of ultra-thin, high-impact protective wearables for hand and finger safety in synchronized figure skating.
     </div>
     <p style="font-size: 1.05rem; max-width: 680px; color: #254e6b;">
-      No protective gear exists for hands and fingers in synchro skating — despite blade run-over injuries causing lacerations, crushed bones, and tendon damage. 
+      No protective gear exists for hands and fingers in synchro skating — despite blade run-over injuries causing lacerations, crushed bones, and tendon damage.
       This research project aims to close the safety gap.
     </p>
     <div class="btn-group">
@@ -346,17 +569,6 @@
 
 <main>
   <div class="container">
-    <!-- Repository Direct Link Section (prominent) 
-    <section style="padding-bottom: 0;">
-      <div class="repo-card">
-        <i class="fab fa-github" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></i>
-        <p style="font-weight: 600; margin-bottom: 0.25rem;">📁 Research Repository</p>
-        <a href="https://github.com/yashilas/bladeguard-synchro" target="_blank" style="font-size: 1.2rem; font-weight: 500;">github.com/bladeguard-synchro</a>
-        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">Star, fork, and contribute to open-source safety research for synchronized skating.</p>
-      </div>
-    </section>-->
-
-    <!-- Problem Statement Section -->
     <section id="problem">
       <h2 class="section-title">The invisible risk on ice</h2>
       <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem;">Synchronized skating teams perform at <strong>12–15 mph</strong> in tight formations. When a skater falls, following skaters cannot stop in time — their blades run over the fallen skater's exposed hands.</p>
@@ -370,7 +582,6 @@
       </div>
     </section>
 
-    <!-- Research Objectives -->
     <section id="research-objectives">
       <h2 class="section-title">Research objectives</h2>
       <div class="grid-3">
@@ -392,7 +603,6 @@
       </div>
     </section>
 
-    <!-- Expected Outcomes -->
     <section>
       <h2 class="section-title">Expected outcomes</h2>
       <div class="outcome-highlight">
@@ -407,7 +617,6 @@
       </div>
     </section>
 
-    <!-- Why This Matters -->
     <section>
       <h2 class="section-title">Why this matters</h2>
       <div class="why-grid">
@@ -429,48 +638,46 @@
       </div>
     </section>
 
-    <!-- Collaboration 
-    <section id="collaboration">
-      <h2 class="section-title">Seeking research partners</h2>
-      <div class="collab-box">
-        <h3><i class="fas fa-flask"></i> Help us build the first synchro-specific hand protection</h3>
-        <p style="margin-top: 0.8rem; opacity: 0.9;">We are looking for a research institute / lab specializing in:</p>
-        <div class="collab-list">
-          <span>Materials science</span>
-          <span>Sports biomechanics</span>
-          <span>Protective equipment design</span>
-          <span>Textile engineering</span>
-        </div>
-        <p style="margin: 1.5rem 0 1rem 0; font-weight: 500;">Together we will:</p>
-        <ul style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem 1.5rem; margin-bottom: 1.8rem;">
-          <li>✓ Explore advanced material options</li>
-          <li>✓ Develop and test prototypes</li>
-          <li>✓ Validate with active synchro skaters</li>
-        </ul>
-        <a href="#" style="background: white; color: #0a1e2f; padding: 0.8rem 1.8rem; border-radius: 40px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;"><i class="fas fa-envelope"></i> Propose a collaboration</a>
-        <p style="font-size: 0.75rem; margin-top: 1.5rem;">contact@bladeguard-synchro.org (placeholder)</p>
-      </div>
-    </section>-->
-
-    <!-- Repository Footer Section 
-    <section style="border-bottom: none; text-align: center;">
-      <div style="background: #eef3fa; border-radius: 2rem; padding: 2rem;">
-        <i class="fab fa-github" style="font-size: 2.5rem; color: #0a1e2f;"></i>
-        <h3 style="margin: 0.5rem 0;">Open research repository</h3>
-        <p>Explore material selection logs, preliminary test data, design iterations, and contribute to the development.</p>
-        <a href="https://github.com/yashilas/bladeguard-synchro" class="btn-primary" target="_blank" style="background: #1f4662; margin-top: 1rem; display: inline-flex;"><i class="fab fa-github"></i> github.com/bladeguard-synchro</a>
-        <p style="margin-top: 1rem; font-size: 0.85rem;"><i class="fas fa-code-branch"></i> Repository: bladeguard-synchro — Ultra-thin, high-impact protective wearables for hand and finger safety</p>
-      </div>
-    </section>-->
+    <section class="chat-section" id="materials-chat">
+      <h2 class="section-title">Glove Materials Assistant</h2>
+      <p style="max-width: 720px; color: #24415f;">
+        The assistant is available as a popup in the bottom-right corner. Tap the chat button to ask about material choice, durability, grip, and warmth.
+      </p>
+    </section>
   </div>
 </main>
 
+<button class="chat-toggle" id="chat-toggle" aria-label="Open chat">
+  <i class="fas fa-comments"></i>
+</button>
+
+<div class="chat-widget" id="chat-widget" aria-hidden="true">
+  <div class="chat-popup">
+    <div class="chat-header">
+      <p>Glove Materials Assistant</p>
+      <button class="close-chat" id="close-chat" aria-label="Close chat">×</button>
+    </div>
+    <div class="chat-log" id="log">
+      <div class="msg bot">Hi — ask me anything about glove materials for synchronized figure skating. For example: "What's the best material for grip in cold rinks?"</div>
+    </div>
+    <form id="chat-form" class="chat-controls">
+      <input type="text" id="input" placeholder="Ask about glove materials…" autocomplete="off" required />
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+    <div class="chat-details">
+      <details>
+        <summary>API settings</summary>
+        <input type="text" id="api-url" placeholder="https://your-api-host.example.com" />
+      </details>
+    </div>
+  </div>
+
+</main>
+
 <footer>
-<!--
-  <div class="container">
-    <p><strong>bladeguard-synchro</strong> · Open research initiative · All content and design CC BY-NC 4.0</p>
-    <p style="margin-top: 0.4rem;"><i class="fab fa-github"></i> <a href="https://github.com/yashilas/bladeguard-synchro" style="color: #2c6280; text-decoration: none;" target="_blank">github.com/yashilas/bladeguard-synchro</a> · Designed for the hold. Engineered for the fall.</p>
-  </div> -->
+  <div class="container" style="text-align:center; padding-top: 2rem; color:#4a627a;">
+    <p>GlideRise — Glove Materials Assistant. Built for synchronized skating material research.</p>
+  </div>
 </footer>
 
 <script>
@@ -484,6 +691,81 @@
         target.scrollIntoView({ behavior: 'smooth' });
       }
     });
+  });
+
+  const DEFAULT_API_URL = "http://localhost:8000";
+  const apiUrlInput = document.getElementById('api-url');
+  apiUrlInput.value = localStorage.getItem('materialsApiUrl') || DEFAULT_API_URL;
+  apiUrlInput.addEventListener('change', () => {
+    localStorage.setItem('materialsApiUrl', apiUrlInput.value.trim());
+  });
+
+  const log = document.getElementById('log');
+  const form = document.getElementById('chat-form');
+  const input = document.getElementById('input');
+  const sendBtn = document.getElementById('send-btn');
+  const chatToggle = document.getElementById('chat-toggle');
+  const chatWidget = document.getElementById('chat-widget');
+  const closeChat = document.getElementById('close-chat');
+
+  function addMessage(text, cls){
+    const div = document.createElement('div');
+    div.className = `msg ${cls}`;
+    div.textContent = text;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+    return div;
+  }
+
+  function openChat(){
+    chatWidget.classList.add('open');
+    chatWidget.setAttribute('aria-hidden', 'false');
+    input.focus();
+  }
+
+  function closeChatWidget(){
+    chatWidget.classList.remove('open');
+    chatWidget.setAttribute('aria-hidden', 'true');
+  }
+
+  chatToggle.addEventListener('click', openChat);
+  closeChat.addEventListener('click', closeChatWidget);
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const message = input.value.trim();
+    if(!message) return;
+
+    addMessage(message, 'user');
+    input.value = '';
+    sendBtn.disabled = true;
+
+    const typingEl = addMessage('Thinking…', 'bot typing');
+
+    const apiUrl = (apiUrlInput.value.trim() || DEFAULT_API_URL).replace(/\/$/, '');
+
+    try{
+      const res = await fetch(`${apiUrl}/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message })
+      });
+
+      if(!res.ok){
+        const detail = await res.text();
+        throw new Error(`API error ${res.status}: ${detail}`);
+      }
+
+      const data = await res.json();
+      typingEl.remove();
+      addMessage(data.reply, 'bot');
+    }catch(err){
+      typingEl.remove();
+      addMessage(`Couldn't reach the assistant: ${err.message}`, 'error');
+    }finally{
+      sendBtn.disabled = false;
+      input.focus();
+    }
   });
 </script>
 </body>

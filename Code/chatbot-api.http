@@ -1,0 +1,18 @@
+### Health check
+GET http://localhost:8000/health
+
+### Chat endpoint - valid request
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+  "message": "What's the best material for grip in cold ice rinks?"
+}
+
+### Chat endpoint - invalid request (empty message)
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+  "message": ""
+}
