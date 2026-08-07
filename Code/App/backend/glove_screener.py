@@ -5,21 +5,25 @@
 #
 #   Criterion                    Weight   Key properties used
 #   ─────────────────────────────────────────────────────────
-#   Flexibility                  0.35     Elongation at break, modulus
-#   Cut resistance potential     0.30     Tensile strength, modulus
+#   Flexibility                  0.30     Elongation at break, modulus
+#   Cut resistance potential     0.25     Tensile strength, modulus
 #   Impact protection potential  0.20     Impact/tear values, tensile strength
+#   Low density / light weight   0.10     Density
 #   Low temperature suitability  0.15     Minimum service temperature
 #
 # Each criterion is scored 0–1. The weighted total is also 0–1.
 # =============================================================================
+
+from pathlib import Path
 
 import pandas as pd
 import re
 
 # ── CONFIGURATION ─────────────────────────────────────────────────────────────
 
-INPUT_FILE  = "Final.csv"
-OUTPUT_FILE = "glove_screener_results.csv"
+data_dir = Path(__file__).parent.parent.parent   / "data" 
+INPUT_FILE  = data_dir / "Final.csv"
+OUTPUT_FILE = data_dir / "glove_screener_results.csv"
 TOP_N       = 15   # rows to print in the summary table
 
 # Minimum number of real (non-null) property values a material must have
@@ -27,10 +31,11 @@ TOP_N       = 15   # rows to print in the summary table
 MIN_DATA_FIELDS = 2
 
 # Weights — must sum to 1.0
-W_FLEX   = 0.35   # flexibility
-W_CUT    = 0.30   # cut resistance potential
-W_IMPACT = 0.20   # impact protection potential
-W_TEMP   = 0.15   # low temperature suitability
+W_FLEX     = 0.30   # flexibility
+W_CUT      = 0.25   # cut resistance potential
+W_IMPACT   = 0.20   # impact protection potential
+W_DENSITY  = 0.10   # low density / light weight
+W_TEMP     = 0.15   # low temperature suitability
 
 # ── LOAD ──────────────────────────────────────────────────────────────────────
 
@@ -96,6 +101,22 @@ def parse_elongation(text):
     return midpoint(text)
 
 
+def parse_density(text):
+    """
+    Convert density to g/cc.
+    Handles g/cc and lb/in³ values that appear in the material export.
+    """
+    s = str(text)
+    if pd.isna(text) or s in ("nan", ""):
+        return None
+    val = midpoint(text)
+    if val is None:
+        return None
+    if "lb/in" in s:
+        return val * 27.6799   # 1 lb/in³ = 27.6799 g/cc
+    return val
+
+
 def parse_impact(text):
     """
     Convert impact/tear values to MPa where the unit is clear.
@@ -145,6 +166,7 @@ df["elongation_pct"] = df["elongation at break"].apply(parse_elongation)
 df["modulus_mpa"]    = df["modulus if available"].apply(parse_modulus)
 df["strength_mpa"]   = df["tensile strength"].apply(parse_strength)
 df["impact_mpa"]     = df["tear or impact related values if available,"].apply(parse_impact)
+df["density_gcc"]    = df["density"].apply(parse_density)
 df["min_temp_c"]     = df["minimum service temperature if available"].apply(parse_min_temp)
 
 # ── MINIMUM DATA FILTER ───────────────────────────────────────────────────────
@@ -152,7 +174,7 @@ df["min_temp_c"]     = df["minimum service temperature if available"].apply(pars
 # Materials with fewer than MIN_DATA_FIELDS real values are excluded —
 # they would otherwise inherit median scores and rank misleadingly.
 
-data_cols = ["elongation_pct", "modulus_mpa", "strength_mpa", "impact_mpa", "min_temp_c"]
+data_cols = ["elongation_pct", "modulus_mpa", "strength_mpa", "impact_mpa", "density_gcc", "min_temp_c"]
 df["data_count"] = df[data_cols].notna().sum(axis=1)
 
 before = len(df)
@@ -226,7 +248,17 @@ impact_combined = impact_combined.fillna(impact_combined.median())
 df["impact_score"] = norm(impact_combined)
 
 
-# ── CRITERION 4: LOW TEMPERATURE SUITABILITY (weight 0.15) ───────────────────
+# ── CRITERION 4: LOW DENSITY / LIGHT WEIGHT (weight 0.10) ───────────────────
+# Lower density means lighter glove layers. Missing density values are treated
+# as neutral rather than penalized.
+
+density_series = df["density_gcc"].copy()
+density_norm = 1 - norm(density_series.fillna(density_series.median()))
+density_score = density_norm.where(density_series.notna(), 0.5)
+df["density_score"] = density_score
+
+
+# ── CRITERION 5: LOW TEMPERATURE SUITABILITY (weight 0.15) ───────────────────
 # Lower minimum service temperature = rated for colder environments = better.
 # Materials with no low-temperature data receive a conservative neutral score
 # of 0.3 (slight penalty for unknown cold performance).
@@ -243,10 +275,11 @@ df["temp_score"] = temp_score
 # ── WEIGHTED TOTAL ────────────────────────────────────────────────────────────
 
 df["Total Score"] = (
-    W_FLEX   * df["flex_score"]   +
-    W_CUT    * df["cut_score"]    +
-    W_IMPACT * df["impact_score"] +
-    W_TEMP   * df["temp_score"]
+    W_FLEX    * df["flex_score"]    +
+    W_CUT     * df["cut_score"]     +
+    W_IMPACT  * df["impact_score"]  +
+    W_DENSITY * df["density_score"] +
+    W_TEMP    * df["temp_score"]
 )
 
 df_ranked = df.sort_values("Total Score", ascending=False).reset_index(drop=True)
@@ -258,11 +291,12 @@ df_ranked.index += 1
 print(f"{'='*110}")
 print(f"  TOP {TOP_N} GLOVE MATERIAL CANDIDATES")
 print(f"  Weights: Flexibility {W_FLEX:.0%} | Cut Resistance {W_CUT:.0%} | "
-      f"Impact Protection {W_IMPACT:.0%} | Low Temp Suitability {W_TEMP:.0%}")
+      f"Impact Protection {W_IMPACT:.0%} | Density {W_DENSITY:.0%} | "
+      f"Low Temp Suitability {W_TEMP:.0%}")
 print(f"{'='*110}")
 
 header = (f"{'Rank':<5} {'Material':<40} {'Family':<26} "
-          f"{'Flex':>6} {'Cut':>6} {'Impact':>8} {'Temp':>6} {'TOTAL':>7}")
+          f"{'Flex':>6} {'Cut':>6} {'Impact':>8} {'Den':>6} {'Temp':>6} {'TOTAL':>7}")
 print(header)
 print("-" * len(header))
 
@@ -274,6 +308,7 @@ for rank, row in df_ranked.head(TOP_N).iterrows():
         f"{row['flex_score']:>6.3f} "
         f"{row['cut_score']:>6.3f} "
         f"{row['impact_score']:>8.3f} "
+        f"{row['density_score']:>6.3f} "
         f"{row['temp_score']:>6.3f} "
         f"{row['Total Score']:>7.4f}"
     )
@@ -285,16 +320,18 @@ print("  Score legend: 0.000 = worst in dataset, 1.000 = best in dataset")
 # ── SAVE FULL RESULTS ─────────────────────────────────────────────────────────
 
 out = df_ranked[[
-    "MaterialName", "Family",
+    "MaterialName", "Family", "density_gcc",
     "elongation_pct", "modulus_mpa", "strength_mpa", "impact_mpa", "min_temp_c",
-    "flex_score", "cut_score", "impact_score", "temp_score", "Total Score", "data_count"
+    "flex_score", "cut_score", "impact_score", "density_score", "temp_score", "Total Score", "data_count"
 ]].rename(columns={
     "MaterialName":   "Material",
     "Family":         "Family",
+    "density_gcc":    "Density (g/cc)",
     "elongation_pct": "Elongation (%)",
     "modulus_mpa":    "Modulus (MPa)",
     "strength_mpa":   "Tensile Strength (MPa)",
     "impact_mpa":     "Impact/Tear (MPa)",
+    "density_score":  "Density Score",
     "min_temp_c":     "Min Service Temp (°C)",
     "flex_score":     "Flexibility Score",
     "cut_score":      "Cut Resistance Score",

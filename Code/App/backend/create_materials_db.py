@@ -58,10 +58,10 @@ This is a {material_name.lower()} material that provides {dens} density per 100 
 
 
 if __name__ == "__main__":
-    # Define paths
-    script_dir = Path(__file__).parent
-    csv_path = script_dir / "data" / "final.csv"
-    output_path = script_dir / "data" / "materials_database.txt"
+    # Define paths    
+    data_dir = Path(__file__).parent.parent.parent   / "data" 
+    csv_path = data_dir / "ranked_materials.csv"
+    output_path = data_dir / "materials_database.txt"
 
     # Create the text database
     num_items = create_materials_text_database(str(csv_path), str(output_path))

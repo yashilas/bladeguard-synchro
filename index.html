@@ -542,6 +542,51 @@
       .container { padding: 0 1.2rem; }
       .chat-log { height: 300px; }
     }
+
+    /* Chat widget - enhanced header, avatar, bubbles, and input */
+    .chat-popup header.chat-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px;
+      background: linear-gradient(180deg,#0f3b5c,#0b2c42);
+      color: #fff;
+    }
+
+    .chat-popup .header-left { display:flex; align-items:center; gap:12px; }
+    .chat-popup .avatar{
+      width:44px; height:44px; border-radius:10px; background:linear-gradient(135deg,#7ab7d4,#0f3b5c);
+      display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:14px;
+      box-shadow: 0 4px 12px rgba(2, 84, 128, 0.25);
+    }
+
+    .assistant-title{ font-weight:800; font-size:0.95rem; }
+    .assistant-sub{ font-size:0.78rem; opacity:0.92; margin-top:2px }
+
+    .chat-log .msg{ display:flex; margin-bottom:8px; }
+    .chat-log .msg .bubble{ max-width:100%; padding:12px 14px; border-radius:14px; font-size:0.95rem; line-height:1.25 }
+    .chat-log .msg.bot{ justify-content:flex-start }
+    .chat-log .msg.bot .bubble{ background:#ffffff; color:#0a1e2f; border:1px solid rgba(10,30,47,0.06); box-shadow:0 6px 18px rgba(11,45,68,0.04) }
+    .chat-log .msg.user{ justify-content:flex-end }
+    .chat-log .msg.user .bubble{ background:#0f3b5c; color:white; border-radius:14px }
+
+    .chat-log .bubble ul, .chat-log .bubble ol { margin: 0; padding-left: 1rem; }
+    .chat-log .bubble li { margin: 0.35rem 0; }
+    .chat-log .section-heading { padding: 8px 0 0 0; }
+    .chat-log .section-heading strong{ display:block; font-size:0.98rem; margin-bottom:6px; color:#0f3b5c }
+    .section-number { font-weight:800; font-size:1.05rem; margin-bottom:6px; color:#0f3b5c }
+    .kv-label { font-weight:700; margin-right:6px }
+    .source-badge { display:inline-block; margin-left:8px; background:#eef6f2; color:#0a6b3a; padding:2px 8px; border-radius:999px; font-size:12px; vertical-align:middle; text-decoration:none }
+
+    .chat-log { padding: 12px 16px; }
+
+    .input-wrap{ display:flex; gap:8px; align-items:center }
+    .input-wrap input{ flex:1; padding:12px 14px; border-radius:12px; border:1px solid #d6e2ea; font-size:15px }
+    .input-wrap button{ background:#0f3b5c; color:white; border:none; padding:10px 12px; border-radius:10px; cursor:pointer }
+
+    .chat-details{ padding:10px 16px; border-top:1px solid #f1f5f9 }
+
   </style>
 </head>
 <body>
@@ -650,27 +695,38 @@
 <button class="chat-toggle" id="chat-toggle" aria-label="Open chat">
   <i class="fas fa-comments"></i>
 </button>
-
 <div class="chat-widget" id="chat-widget" aria-hidden="true">
-  <div class="chat-popup">
-    <div class="chat-header">
-      <p>Glove Materials Assistant</p>
-      <button class="close-chat" id="close-chat" aria-label="Close chat">×</button>
+  <div class="chat-popup" role="dialog" aria-label="Glove Materials Assistant">
+    <header class="chat-header">
+      <div class="header-left">
+        <div class="avatar" aria-hidden="true">GA</div>
+        <div class="header-text">
+          <div class="assistant-title">Glove Materials Assistant</div>
+          <div class="assistant-sub">Ask about materials, durability, & fit</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="close-chat" id="close-chat" aria-label="Close chat">✕</button>
+      </div>
+    </header>
+
+    <div class="chat-log" id="log" role="log" aria-live="polite">
+      <div class="msg bot">
+        <div class="bubble">Hi — ask me anything about glove materials for synchronized figure skating. For example: "What's the best material for grip in cold rinks?"</div>
+      </div>
     </div>
-    <div class="chat-log" id="log">
-      <div class="msg bot">Hi — ask me anything about glove materials for synchronized figure skating. For example: "What's the best material for grip in cold rinks?"</div>
-    </div>
-    <form id="chat-form" class="chat-controls">
-      <input type="text" id="input" placeholder="Ask about glove materials…" autocomplete="off" required />
-      <button type="submit" id="send-btn">Send</button>
+
+    <form id="chat-form" class="chat-controls" autocomplete="off">
+      <div class="input-wrap">
+        <input type="text" id="input" placeholder="Ask about glove materials…" required />
+        <button type="submit" id="send-btn" aria-label="Send message">▶</button>
+      </div>
+      <div class="chat-details">
+        <input type="text" id="api-url" placeholder="API URL (optional)" />
+      </div>
     </form>
-    <div class="chat-details">
-      <details>
-        <summary>API settings</summary>
-        <input type="text" id="api-url" placeholder="https://your-api-host.example.com" />
-      </details>
-    </div>
   </div>
+</div>
 
 </main>
 
@@ -709,12 +765,153 @@
   const closeChat = document.getElementById('close-chat');
 
   function addMessage(text, cls){
-    const div = document.createElement('div');
-    div.className = `msg ${cls}`;
-    div.textContent = text;
-    log.appendChild(div);
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `msg ${cls}`;
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    bubble.textContent = text;
+    msgDiv.appendChild(bubble);
+    log.appendChild(msgDiv);
     log.scrollTop = log.scrollHeight;
-    return div;
+    return msgDiv;
+  }
+
+  function formatAssistantReply(text){
+    const trimmed = (text||'').trim();
+    if(!trimmed) return document.createTextNode('');
+    const lines = trimmed.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+
+    // If the reply contains explicit bold headings like `**Heading**`,
+    // treat those as section headers and group following lines as list items.
+    const hasHeading = lines.some(l => /^\*\*(.+?)\*\*$/.test(l));
+    const frag = document.createDocumentFragment();
+
+    if(hasHeading){
+      // Support two heading styles:
+      // 1) bold headings like **Heading** (previous behavior)
+      // 2) numbered headings like "1. Nitrile Gloves"
+      let currentList = null;
+      for(const line of lines){
+        // numbered heading
+        const numMatch = line.match(/^(\d+)\.\s*(.+)$/);
+        if(numMatch){
+          const idx = numMatch[1];
+          const title = numMatch[2];
+          const heading = document.createElement('div');
+          heading.className = 'section-number';
+          heading.textContent = `${idx}. ${title}`;
+          frag.appendChild(heading);
+          currentList = document.createElement('ul');
+          currentList.style.margin = '6px 0 8px 1rem';
+          frag.appendChild(currentList);
+          continue;
+        }
+
+        // bold heading (legacy)
+        const m = line.match(/^\*\*(.+?)\*\*$/);
+        if(m){
+          const heading = document.createElement('div');
+          heading.className = 'section-heading';
+          const strong = document.createElement('strong');
+          strong.textContent = m[1].trim();
+          heading.appendChild(strong);
+          frag.appendChild(heading);
+          currentList = document.createElement('ul');
+          currentList.style.margin = '6px 0 8px 1rem';
+          frag.appendChild(currentList);
+          continue;
+        }
+
+        // key:value or bullet lines become list items with bold label when possible
+        const kv = line.match(/^(?:[-•*]\s*)?([A-Za-z0-9 \-()]+?)\s*:\s*(.+)$/);
+        const urlMatch = line.match(/(https?:\/\/\S+|www\.\S+)/);
+        if(currentList){
+          const li = document.createElement('li');
+          li.style.margin = '0.35rem 0';
+          if(kv){
+            const label = document.createElement('span');
+            label.className = 'kv-label';
+            label.textContent = kv[1].trim();
+            li.appendChild(label);
+            const rest = document.createElement('span');
+            rest.textContent = kv[2].trim();
+            li.appendChild(rest);
+            // if value contains URL, add a source badge
+            const url = kv[2].match(/(https?:\/\/\S+|www\.\S+)/);
+            if(url){
+              const a = document.createElement('a');
+              a.className = 'source-badge';
+              a.href = url[0].startsWith('http') ? url[0] : 'https://' + url[0];
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.textContent = new URL(a.href).hostname.replace('www.','');
+              li.appendChild(a);
+            }
+          } else {
+            // plain line -> strip leading bullets and add as text
+            const itemText = line.replace(/^(-|\*|•)\s+/, '').replace(/^\d+\.\s+/, '');
+            li.textContent = itemText;
+            if(urlMatch){
+              const a = document.createElement('a');
+              a.className = 'source-badge';
+              a.href = urlMatch[0].startsWith('http') ? urlMatch[0] : 'https://' + urlMatch[0];
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.textContent = new URL(a.href).hostname.replace('www.','');
+              li.appendChild(a);
+            }
+          }
+          currentList.appendChild(li);
+        } else {
+          // no current list -> paragraph
+          const p = document.createElement('p');
+          p.textContent = line;
+          p.style.margin = '0 0 0.6rem 0';
+          frag.appendChild(p);
+        }
+      }
+      return frag;
+    }
+
+    // No explicit headings — fall back to previous behavior (detect list-like replies)
+    const listMarkers = lines.filter(l => /^(-|\*|•)\s+/.test(l) || /^\d+\./.test(l));
+    if(lines.length > 1 && listMarkers.length >= Math.ceil(lines.length/2)){
+      const isNumbered = lines.every(l => /^\d+\./.test(l) || !/^(-|\*|•)\s+/.test(l));
+      const list = document.createElement(isNumbered ? 'ol' : 'ul');
+      list.style.margin = '0';
+      list.style.paddingLeft = '1rem';
+      for(const line of lines){
+        let item = line.replace(/^(-|\*|•)\s+/, '').replace(/^\d+\.\s+/, '');
+        const li = document.createElement('li');
+        li.textContent = item;
+        li.style.margin = '0.35rem 0';
+        list.appendChild(li);
+      }
+      return list;
+    }
+
+    // fallback: preserve paragraph breaks
+    const paragraphs = trimmed.split(/\n\n+/).map(p=>p.trim()).filter(Boolean);
+    for(const p of paragraphs){
+      const el = document.createElement('p');
+      el.textContent = p;
+      el.style.margin = '0 0 0.6rem 0';
+      frag.appendChild(el);
+    }
+    return frag;
+  }
+
+  function addAssistantMessage(text, cls='bot'){
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `msg ${cls}`;
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    const formatted = formatAssistantReply(text);
+    bubble.appendChild(formatted);
+    msgDiv.appendChild(bubble);
+    log.appendChild(msgDiv);
+    log.scrollTop = log.scrollHeight;
+    return msgDiv;
   }
 
   function openChat(){
@@ -758,10 +955,10 @@
 
       const data = await res.json();
       typingEl.remove();
-      addMessage(data.reply, 'bot');
+      addAssistantMessage(data.reply, 'bot');
     }catch(err){
       typingEl.remove();
-      addMessage(`Couldn't reach the assistant: ${err.message}`, 'error');
+      addAssistantMessage(`Couldn't reach the assistant: ${err.message}`, 'bot error');
     }finally{
       sendBtn.disabled = false;
       input.focus();

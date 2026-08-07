@@ -9,16 +9,21 @@
 # All three are combined into one Score between 0 (worst) and 1 (best).
 # =============================================================================
 
+from pathlib import Path
+
 import pandas as pd   # for reading and working with tabular data
 import re             # for pulling numbers out of text like "5300 - 8000 psi"
+import unicodedata
 
 # -----------------------------------------------------------------------------
 # CONFIGURATION  ← only change things here
 # -----------------------------------------------------------------------------
 
-INPUT_FILE  = "Final.csv"     # your MatWeb CSV file
-OUTPUT_FILE = "ranked_materials.csv"
-TOP_N       = 15              # how many materials to show in the printed table
+data_dir = Path(__file__).parent.parent.parent   / "data" 
+INPUT_FILE  = data_dir / "Final.csv"     # your MatWeb CSV file
+OUTPUT_FILE = data_dir / "ranked_materials.csv"
+OUTPUT_FILE_CLEAN = data_dir / "ranked_materials_clean.csv"
+TOP_N       = 200             # how many materials to show in the printed table
 
 # Column names as they appear in the CSV
 COL_NAME       = "MaterialName"
@@ -186,20 +191,51 @@ for rank, row in df_ranked.head(TOP_N).iterrows():
 
 
 # =============================================================================
-# STEP 7 — SAVE FULL RANKED LIST TO CSV
+# STEP 7 — SAVE FULL RANKED LIST AND CLEAN FORMATTED CSVS
 # =============================================================================
 
-output_cols = {
-    COL_NAME:         "Material",
-    COL_FAMILY:       "Family",
-    "density_gcc":    "Density (g/cc)",
-    "elongation_pct": "Elongation (%)",
-    "strength_mpa":   "Tensile Strength (MPa)",
-    "Score":          "Score (0–1)",
-}
+raw_cols = [
+    "No",
+    COL_NAME,
+    COL_FAMILY,
+    COL_DENSITY,
+    COL_STRENGTH,
+    COL_ELONGATION,
+    "modulus if available",
+    "tear or impact related values if available,",
+    "minimum service temperature if available",
+    "form availability: film, fiber, sheet, coating, fabric",
+    "first impression: impact layer candidate, cut layer candidate, or hybrid layer candidate",
+    "Notes",
+]
 
-df_ranked[list(output_cols.keys())].rename(columns=output_cols).to_csv(
-    OUTPUT_FILE, index_label="Rank"
-)
 
+def clean_text(value):
+    if isinstance(value, str):
+        text = value.replace("\xa0", " ")
+        text = text.replace("\u2019", "'")
+        text = text.replace("\u2013", "-")
+        text = text.replace("\u2014", "-")
+        text = text.replace("\u2212", "-")
+        text = text.replace("°", "")
+        text = unicodedata.normalize("NFKC", text)
+        return text.strip()
+    return value
+
+output_full = df_ranked[raw_cols + ["density_gcc", "elongation_pct", "strength_mpa", "Score"]].copy()
+output_full[raw_cols] = output_full[raw_cols].map(clean_text)
+output_full.to_csv(OUTPUT_FILE, index_label="Rank", encoding="utf-8-sig")
 print(f"\nFull ranked list saved to: {OUTPUT_FILE}")
+
+output_clean = output_full.copy()
+output_clean["Density"] = output_clean["density_gcc"].map(lambda v: f"{v:.3f}g/cc")
+output_clean["Elongation"] = output_clean["elongation_pct"].map(lambda v: f"{v:.1f}%")
+output_clean["Strength"] = output_clean["strength_mpa"].map(lambda v: f"{v:.1f}MPa")
+output_clean["Score"] = output_clean["Score"].map(lambda v: f"{v:.4f}")
+
+output_clean = output_clean[
+    raw_cols + ["density_gcc", "Density", "elongation_pct", "Elongation", "strength_mpa", "Strength", "Score"]
+]
+
+output_clean.to_csv(OUTPUT_FILE_CLEAN, index_label="Rank", encoding="utf-8-sig")
+print(f"Clean ranked list saved to: {OUTPUT_FILE_CLEAN}")
