@@ -1,12 +1,62 @@
 # bladeguard-synchro
 bladeguard-synchro — Ultra-thin, high-impact protective wearables for hand and finger safety in synchronized figure skating. This repository documents material research, prototype design, impact/cut testing, and collaboration efforts to address a critical safety gap in a growing sport.
 
-# Glove Materials Chatbot
+## purpose
+bladeguard-synchro is a research and prototype project focused on developing ultra-thin protective wearables for hand and finger safety in synchronized figure skating. The main goal is to protect skaters from blade run-over injuries while preserving dexterity and grip.
 
-Turns `glove_agent.py` into a small web app:
+## Project Overview
 
+`bladeguard-synchro` combines materials research and a lightweight assistant interface to help design protective glove solutions for synchronized skating. The repository includes:
+
+-  **FastAPI backend** that wraps glove material reasoning and exposes a `POST /chat` API.
+-  **static frontend** chat widget that calls the API and displays structured material recommendations.
+-  **Chroma knowledge collection** used for material lookup, retrieval, and response generation.
+-  deployment-focused workflow that supports local testing and static hosting while keeping the actual API on a real backend host.
+
+The project’s goal is to protect skaters from blade run-over injuries while preserving grip, flexibility, and comfort in performance footwear.
+
+What it includes
+-  Materials research: Evaluates materials for cut resistance, impact absorption, flexibility, and thermal comfort.
+-  Prototype design: Targets a low-profile protective system that can fit inside skating gloves and still allow full finger movement.
+-  Testing focus: Aims to reduce impact injuries and improve blade cut protection without bulky padding.
+
+Application components
 - **backend/** — FastAPI wrapper exposing the agent as a `POST /chat` API
-- **frontend/** — a static page (deployable to GitHub Pages) that calls the API and shows the reply
+    - FastAPI server providing a POST /chat endpoint.
+    - Uses a materials_db Chroma collection for retrieval or RAG-style response generation.
+    - Wraps glove_agent.py logic into an API, so the assistant can answer questions like “best material for grip in cold rinks”.
+    - Supports local development on http://localhost:8000.
+- **frontend/** — a static page (deployable to GitHub Pages) that calls the API and shows the reply (frontend or root index.html):
+    -  Static web UI with a chat widget for asking material and glove design questions.
+    -  Built as a single-page interface, designed for easy deployment to GitHub Pages.
+    -  Includes a configurable API URL setting that can be stored in browser localStorage.
+
+Key features
+- Chatbot interface: A bottom-right popup assistant that accepts user questions and displays structured replies.
+- Configurable API endpoint: Frontend reads the backend URL from a config file or saved settings, avoiding hardcoded endpoints.
+- Chroma collection lifecycle: Backend initializes or reuses a persistent Chroma collection for material knowledge.
+- Single-file frontend: No build step needed for the frontend, making deployment simple.
+
+Deployment notes
+- The backend must run on a real host since GitHub Pages only serves static files.
+- The frontend can be served from GitHub Pages or any static site host.
+- Backend depends on environment variables like OPENAI_API_KEY and optionally OPENAI_DEFAULT_MODEL.
+
+Structure
+-  index.html — main public-facing landing page and chat UI
+-  main.py — FastAPI backend entrypoint
+-  glove_agent.py — agent logic and material reasoning
+-  glove_screener.py — material screening utilities
+-  rag_setup.py / rank_materials.py — data retrieval and ranking helpers
+-  create_materials_db.py — build or prepare the Chroma collection
+-  frontend — standalone frontend assets
+-  data — datasets and material database files
+-  chroma — Chroma database storage
+
+Value proposition  
+  This project combines materials science research with a lightweight interactive assistant to help users choose glove materials for synchronized skating. It is both a documentation/research repo and a small web app prototype for material recommendation.
+
+# bladeguard-synchro Chatbot Deployment
 
 ## 1. Backend
 
