@@ -101,7 +101,13 @@ async def lifespan(app: FastAPI):
     global materials_db_collection
     script_dir = Path(__file__).parent.parent.parent  
     chroma_client = chromadb.PersistentClient(path=script_dir / "chroma")
-    materials_db_collection = chroma_client.get_collection(name="materials_db")
+    existing = [col.name for col in chroma_client.list_collections()]
+    if "materials_db" in existing:
+        materials_db_collection = chroma_client.get_collection(name="materials_db")
+        print("Startup: Reused existing Chroma collection 'materials_db'.")
+    else:
+        materials_db_collection = chroma_client.create_collection(name="materials_db")
+        print("Startup: Created new Chroma collection 'materials_db'.")
     yield
 
 
