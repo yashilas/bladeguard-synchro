@@ -1,7 +1,7 @@
 # bladeguard-synchro
 bladeguard-synchro — Ultra-thin, high-impact protective wearables for hand and finger safety in synchronized figure skating. This repository documents material research, prototype design, impact/cut testing, and collaboration efforts to address a critical safety gap in a growing sport.
 
-## purpose
+## Purpose
 bladeguard-synchro is a research and prototype project focused on developing ultra-thin protective wearables for hand and finger safety in synchronized figure skating. The main goal is to protect skaters from blade run-over injuries while preserving dexterity and grip.
 
 ## Project Overview
