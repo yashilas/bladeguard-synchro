@@ -736,6 +736,7 @@
   </div>
 </footer>
 
+<script src="config.js"></script>
 <script>
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -749,7 +750,7 @@
     });
   });
 
-  const DEFAULT_API_URL = "http://localhost:8000";
+  const DEFAULT_API_URL = window.GLIDERISE_CONFIG?.apiUrl || "http://localhost:8000";
   const apiUrlInput = document.getElementById('api-url');
   apiUrlInput.value = localStorage.getItem('materialsApiUrl') || DEFAULT_API_URL;
   apiUrlInput.addEventListener('change', () => {

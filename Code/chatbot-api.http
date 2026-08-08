@@ -16,3 +16,16 @@ Content-Type: application/json
 {
   "message": ""
 }
+
+#
+### Chat endpoint - invalid request (missing message field)
+GET https://bladeguard-2erc.onrender.com/health
+
+
+### Chat endpoint - valid request
+POST https://bladeguard-2erc.onrender.com/chat
+Content-Type: application/json
+
+{
+  "message": "What's the best material for grip in cold ice rinks?"
+}
